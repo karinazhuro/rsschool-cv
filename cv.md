@@ -13,5 +13,4 @@
 
 **Education:** I studied from books and https://learn.javascript.ru/
 
-**English language:** >Pre-intermediate
-  Studied at InternationalHouse. Now I continue my training in Streamline
+**English language:** Pre-intermediate. Studied at InternationalHouse. Now I continue my training in Streamline
