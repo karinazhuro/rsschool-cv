@@ -1,0 +1,24 @@
+{
+  "name": "rsschool-cv",
+  "version": "1.0.0",
+  "description": "<a href=\"https://karinazhuro.github.io/rsschool-cv/\"><img src=\"https://raw.githubusercontent.com/karinazhuro/rsschool-cv/rsschool-cv-html/app/img/SocialPreview.png\"></a>\\\r My CV you can look at a link - https://karinazhuro.github.io/rsschool-cv/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karinazhuro/rsschool-cv.git"
+  },
+  "author": "Karina Zhuro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karinazhuro/rsschool-cv/issues"
+  },
+  "homepage": "https://github.com/karinazhuro/rsschool-cv#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}

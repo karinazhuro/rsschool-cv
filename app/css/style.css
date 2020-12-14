@@ -1,0 +1,67 @@
+#wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 80px 0; }
+  #wrapper #sideLeft {
+    width: 300px;
+    background-color: #F0F0F1;
+    margin: 0 60px 50px 0;
+    padding: 0 0 0 50px; }
+    #wrapper #sideLeft img {
+      height: 263px;
+      border-radius: 50%;
+      margin: 50px auto 30px;
+      display: flex;
+      position: relative;
+      left: 66px; }
+    #wrapper #sideLeft #name {
+      font: 700 45px 'Raleway', sans-serif;
+      text-align: end;
+      position: relative;
+      left: 15px;
+      color: #333333; }
+    #wrapper #sideLeft #profession {
+      font: 500 16px 'Raleway', sans-serif;
+      margin: 23px 0 0 0;
+      text-transform: uppercase;
+      color: #333335; }
+    #wrapper #sideLeft #infoAboutMe {
+      margin: 40px 0; }
+      #wrapper #sideLeft #infoAboutMe #infoAboutMeTitle {
+        border-bottom: 2px solid #333335;
+        padding: 14px;
+        margin: 0 44px 0 0;
+        text-transform: uppercase;
+        font: 800 16px 'Raleway', sans-serif;
+        color: #333333; }
+      #wrapper #sideLeft #infoAboutMe #infoAboutMeDescText {
+        margin: 60px 39px 0 0;
+        padding: 0 0 60px 0;
+        font: 14px 'Raleway', sans-serif;
+        line-height: 19px; }
+      #wrapper #sideLeft #infoAboutMe address {
+        font-style: normal;
+        font: 700 16px 'Raleway', sans-serif;
+        color: #313133; }
+  #wrapper #sideRight {
+    margin: 100px 0 0 100px;
+    max-width: 300px;
+    color: #313133; }
+    #wrapper #sideRight .sideRightWrap {
+      padding: 20px 0; }
+    #wrapper #sideRight .sideRightTitle {
+      font: 800 20px 'Raleway', sans-serif;
+      text-transform: uppercase;
+      border-bottom: 3px solid;
+      padding: 20px;
+      text-align: end;
+      margin: 0 0 30px 0;
+      position: relative;
+      right: 50px; }
+    #wrapper #sideRight .sideRightDesc {
+      font: 500 16px 'Raleway', sans-serif;
+      line-height: 22px; }
+    #wrapper #sideRight .link {
+      color: #313133; }
