@@ -27,21 +27,21 @@
       margin: 23px 0 0 0;
       text-transform: uppercase;
       color: #333335; }
-    #wrapper #sideLeft #infoAboutMe {
+    #wrapper #sideLeft #aboutMe {
       margin: 40px 0; }
-      #wrapper #sideLeft #infoAboutMe #infoAboutMeTitle {
+      #wrapper #sideLeft #aboutMe #title {
         border-bottom: 2px solid #333335;
         padding: 14px;
         margin: 0 44px 0 0;
         text-transform: uppercase;
         font: 800 16px 'Raleway', sans-serif;
         color: #333333; }
-      #wrapper #sideLeft #infoAboutMe #infoAboutMeDescText {
+      #wrapper #sideLeft #aboutMe #descText {
         margin: 60px 39px 0 0;
         padding: 0 0 60px 0;
         font: 14px 'Raleway', sans-serif;
         line-height: 19px; }
-      #wrapper #sideLeft #infoAboutMe address {
+      #wrapper #sideLeft #aboutMe address {
         font-style: normal;
         font: 700 16px 'Raleway', sans-serif;
         color: #313133; }
@@ -49,9 +49,9 @@
     margin: 100px 0 0 100px;
     max-width: 300px;
     color: #313133; }
-    #wrapper #sideRight .sideRightWrap {
+    #wrapper #sideRight .wrap {
       padding: 20px 0; }
-    #wrapper #sideRight .sideRightTitle {
+    #wrapper #sideRight .title {
       font: 800 20px 'Raleway', sans-serif;
       text-transform: uppercase;
       border-bottom: 3px solid;
@@ -60,8 +60,21 @@
       margin: 0 0 30px 0;
       position: relative;
       right: 50px; }
-    #wrapper #sideRight .sideRightDesc {
+    #wrapper #sideRight .desc {
       font: 500 16px 'Raleway', sans-serif;
       line-height: 22px; }
-    #wrapper #sideRight .link {
-      color: #313133; }
+      #wrapper #sideRight .desc .link {
+        color: #313133; }
+        #wrapper #sideRight .desc .link:visited {
+          color: #313133; }
+    #wrapper #sideRight #book {
+      list-style-type: none;
+      padding: 0 0 0 10px;
+      font: 500 14px 'Raleway', sans-serif;
+      line-height: 19px; }
+      #wrapper #sideRight #book li {
+        padding: 5px 0; }
+        #wrapper #sideRight #book li .link {
+          color: #313133; }
+          #wrapper #sideRight #book li .link:visited {
+            color: #313133; }
