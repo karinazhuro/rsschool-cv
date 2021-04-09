@@ -1,3 +1,5 @@
+@import "rules";
+
 #wrapper {
   display: flex;
   justify-content: space-evenly;
@@ -95,11 +97,12 @@
       }
     }
 
+    #skills {
+      @include ul;
+    }
+
     #book {
-      list-style-type: none;
-      padding: 0 0 0 10px;
-      font: 500 14px 'Raleway', sans-serif;
-      line-height: 19px;
+      @include ul;
 
       li {
         padding: 5px 0;

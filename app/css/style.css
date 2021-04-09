@@ -67,6 +67,11 @@
         color: #313133; }
         #wrapper #sideRight .desc .link:visited {
           color: #313133; }
+    #wrapper #sideRight #skills {
+      list-style-type: none;
+      padding: 0 0 0 10px;
+      font: 500 14px 'Raleway', sans-serif;
+      line-height: 19px; }
     #wrapper #sideRight #book {
       list-style-type: none;
       padding: 0 0 0 10px;
