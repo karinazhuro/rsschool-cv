@@ -75,3 +75,35 @@ function count(string) {
 From 2019 to 2021 year, I have been working as a technical specialist, developing a website on Wordpress and a separate
 functional.
 
+---
+
+## Education:
+
+**Books:**
+
+* Jennifer Niederst Robbins "HTML5, CSS3 and JavaScript. Complete guide"
+* Jon Duckett, "Javascript and jQuery. Interactive web development"
+* JavaScript Manual on [learnjavascript.ru](https://learn.javascript.ru/)
+
+**Courses:**
+
+* React and Redux on the [udemy.com](https://www.udemy.com/) (completed)
+* RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
+
+**Pet Projects:**
+
+* I have experience in developing a non-commercial personal web-app for a pizzeria using React like UI library and
+  public REST API. Deploy in [GitHub Pages](https://karinazhuro.github.io/pzz-react/).
+* Web-app 'Notes". Deploy in [GitHub Pages](https://karinazhuro.github.io/notes/).
+* Full screen web-page (banner) for mobile devices with defined 7 locations. Deploy
+  in [GitHub Pages](https://karinazhuro.github.io/banner/).
+
+---
+
+## Languages:
+
+* English - Pre-intermediate. \
+  Now I continue my training in Streamline for improve my skill.
+  ![Certificate of completion](https://str.by/cert-web/uploads/certificates/44EC602454546CA8BDECB8C8B3F7A561.jpg)
+* Russian - Native
+  * Spanish - Basic
