@@ -8,9 +8,7 @@
 * **Phone:** +375 44 7333963
 * **Discord:** karinazhuro#5892
 * **[LinkedIn](https://www.linkedin.com/in/karina-zhuro/)**
-* **[GitHub](https://www.github.com/karinazhuro)** 
-
----
+* **[GitHub](https://www.github.com/karinazhuro)**
 
 ## About myself:
 
@@ -25,7 +23,6 @@ got myself.
 
 I believe, that my ability to learn and to gain new skills will lead me through this path of becoming a proficient
 Frontend Developer.
----
 
 ## Skills:
 
@@ -42,8 +39,6 @@ Frontend Developer.
 * VS Code, WebStorm
 * Git
 * Gulp, Webpack, Babel
-
----
 
 ## Example code:
 
@@ -75,8 +70,6 @@ function count(string) {
 From 2019 to 2021 year, I have been working as a technical specialist, developing a website on Wordpress and a separate
 functional.
 
----
-
 ## Education:
 
 **Books:**
@@ -97,8 +90,6 @@ functional.
 * Web-app 'Notes". Deploy in [GitHub Pages](https://karinazhuro.github.io/notes/).
 * Full screen web-page (banner) for mobile devices with defined 7 locations. Deploy
   in [GitHub Pages](https://karinazhuro.github.io/banner/).
-
----
 
 ## Languages:
 
