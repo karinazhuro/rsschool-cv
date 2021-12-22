@@ -61,8 +61,6 @@ function count(string) {
 }
 ```
 
----
-
 ## Work experience:
 
 **"International state ecological Institute named after A.D.Sakharov" of the Belarusian state University** \
