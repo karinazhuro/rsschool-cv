@@ -106,4 +106,4 @@ functional.
   Now I continue my training in Streamline for improve my skill.
   ![Certificate of completion](https://str.by/cert-web/uploads/certificates/44EC602454546CA8BDECB8C8B3F7A561.jpg)
 * Russian - Native
-  * Spanish - Basic
+* Spanish - Basic
