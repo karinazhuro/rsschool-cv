@@ -1,0 +1,51 @@
+@import "var";
+
+.wrapper {
+  margin: auto;
+
+  background: $primary-color;
+
+  .about-me {
+    header {
+      .profile {
+        .photo {
+          max-width: 25%;
+
+          float: left;
+
+          border-radius: 50%;
+        }
+
+        .full-name {
+          .surname {
+            font-family: Montserrat, sans-serif;
+            font-weight: normal;
+            font-size: 25px;
+            line-height: 30px;
+
+            color: $on-secondary-color;
+          }
+
+          .name {
+            font-family: Montserrat, sans-serif;
+            font-weight: 500;
+            font-size: 35px;
+            line-height: 43px;
+
+            color: $on-primary-color;
+          }
+        }
+
+        .profession {
+          font-family: Montserrat, sans-serif;
+          font-weight: bold;
+          font-size: 15px;
+          line-height: 18px;
+
+          color: $on-secondary-color;
+        }
+      }
+    }
+  }
+
+}
