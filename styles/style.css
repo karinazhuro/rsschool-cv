@@ -1,32 +1,111 @@
 .wrapper {
+  display: flex;
+  padding: 10px 14px;
   margin: auto;
   background: linear-gradient(180deg, rgba(3, 56, 244, 0.71) 0%, rgba(224, 37, 206, 0.79) 93.75%);
 }
-.wrapper .about-me header .profile .photo {
-  max-width: 25%;
-  float: left;
+.wrapper header {
+  flex: 1;
+  padding: 10px 18px;
+  background-color: rgba(196, 196, 196, 0.3);
+  border-radius: 10px;
+}
+.wrapper header .profile {
+  display: flex;
+  margin: 0 0 20px 0;
+}
+.wrapper header .profile .photo {
+  width: 110px;
+  height: 116.02px;
+  padding: 0 10px 0 0;
   border-radius: 50%;
 }
-.wrapper .about-me header .profile .full-name .surname {
+.wrapper header .profile .align {
+  padding: 0 10px;
+}
+.wrapper header .profile .align .full-name .surname {
+  margin: 5px 0;
   font-family: Montserrat, sans-serif;
   font-weight: normal;
   font-size: 25px;
   line-height: 30px;
   color: #cecaca;
 }
-.wrapper .about-me header .profile .full-name .name {
+.wrapper header .profile .align .full-name .name {
+  margin: 5px 0;
   font-family: Montserrat, sans-serif;
   font-weight: 500;
   font-size: 35px;
   line-height: 43px;
   color: #ffffff;
 }
-.wrapper .about-me header .profile .profession {
+.wrapper header .profile .align .profession {
+  margin: 5px 0;
   font-family: Montserrat, sans-serif;
   font-weight: bold;
   font-size: 15px;
   line-height: 18px;
   color: #cecaca;
+}
+.wrapper header .contacts {
+  padding: 0;
+  margin: 20px 0 13px;
+}
+.wrapper header .contacts .contact-item {
+  display: flex;
+  align-items: center;
+  padding: 7px 14px;
+  margin-bottom: 5px;
+  background: rgba(196, 196, 196, 0.35);
+  list-style: none;
+  border-radius: 10px;
+}
+.wrapper header .contacts .contact-item .contact-icon {
+  padding-right: 30px;
+}
+.wrapper header .contacts .contact-item .contact-text {
+  font-family: Calibri, sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.wrapper header .contacts .contact-item .contact-text .link {
+  text-decoration: none;
+  color: #ffffff;
+}
+.wrapper header .about-myself {
+  padding: 6px 12px;
+  background-color: rgba(196, 196, 196, 0.35);
+  border-radius: 10px;
+}
+.wrapper header .about-myself .title-block--light {
+  padding: 6px 9px;
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.wrapper header .about-myself .about-myself-text {
+  padding: 0 0 12px 0;
+  font-family: Calibri, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fafafa;
+}
+.wrapper main {
+  flex: 1;
+  padding: 19px 14px;
+}
+.wrapper main .skills .title-block--dark {
+  padding: 3px 30px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background: #545454;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
