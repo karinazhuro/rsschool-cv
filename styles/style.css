@@ -7,6 +7,7 @@
 .wrapper header {
   flex: 1;
   padding: 10px 18px;
+  margin-right: 6px;
   background-color: rgba(196, 196, 196, 0.3);
   border-radius: 10px;
 }
@@ -16,8 +17,8 @@
 }
 .wrapper header .profile .photo {
   width: 110px;
-  height: 116.02px;
-  padding: 0 10px 0 0;
+  height: 116px;
+  padding-right: 10px;
   border-radius: 50%;
 }
 .wrapper header .profile .align {
@@ -47,29 +48,28 @@
   line-height: 18px;
   color: #cecaca;
 }
-.wrapper header .contacts {
-  padding: 0;
+.wrapper header .contacts-list {
   margin: 20px 0 13px;
+  list-style: none;
 }
-.wrapper header .contacts .contact-item {
+.wrapper header .contacts-list .contact-item {
   display: flex;
   align-items: center;
   padding: 7px 14px;
   margin-bottom: 5px;
   background: rgba(196, 196, 196, 0.35);
-  list-style: none;
   border-radius: 10px;
 }
-.wrapper header .contacts .contact-item .contact-icon {
+.wrapper header .contacts-list .contact-item .contact-icon {
   padding-right: 30px;
 }
-.wrapper header .contacts .contact-item .contact-text {
+.wrapper header .contacts-list .contact-item .contact-text {
   font-family: Calibri, sans-serif;
   font-size: 15px;
   line-height: 18px;
   color: #ffffff;
 }
-.wrapper header .contacts .contact-item .contact-text .link {
+.wrapper header .contacts-list .contact-item .contact-text .link {
   text-decoration: none;
   color: #ffffff;
 }
@@ -87,7 +87,7 @@
   color: #ffffff;
 }
 .wrapper header .about-myself .about-myself-text {
-  padding: 0 0 12px 0;
+  padding-bottom: 12px;
   font-family: Calibri, sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -96,16 +96,144 @@
 .wrapper main {
   flex: 1;
   padding: 19px 14px;
+  background-color: #ffffff;
+  border-radius: 10px;
 }
-.wrapper main .skills .title-block--dark {
-  padding: 3px 30px;
+.wrapper main .skills-wrapper .title-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.wrapper main .skills-wrapper .title-wrapper .title-block--dark {
+  flex-basis: 37%;
+  padding: 3px 3px 3px 30px;
   font-family: Montserrat, sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
+  text-transform: uppercase;
   background: #545454;
   border-radius: 5px;
+}
+.wrapper main .skills-wrapper .title-wrapper .line {
+  flex-basis: 55%;
+  border: 1px solid #545454;
+}
+.wrapper main .skills-wrapper .skills {
+  display: flex;
+}
+.wrapper main .skills-wrapper .skills .skills-item-wrapper .subtitle {
+  font-family: Calibri, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #343434;
+}
+.wrapper main .skills-wrapper .skills .skills-item-wrapper .skill-list {
+  list-style: none;
+}
+.wrapper main .skills-wrapper .skills .skills-item-wrapper .skill-list .skill-item {
+  font-family: Calibri, sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  color: #343434;
+}
+.wrapper main .skills-wrapper .skills .skills-item-wrapper:not(:last-child) {
+  margin-right: 50px;
+}
+.wrapper main .example-code-wrapper .title-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.wrapper main .example-code-wrapper .title-wrapper .title-block--dark {
+  flex-basis: 37%;
+  padding: 3px 3px 3px 30px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #545454;
+  border-radius: 5px;
+}
+.wrapper main .example-code-wrapper .title-wrapper .line {
+  flex-basis: 55%;
+  border: 1px solid #545454;
+}
+.wrapper main .example-code-wrapper .task {
+  margin-bottom: 10px;
+}
+.wrapper main .example-code-wrapper .task .subtitle {
+  display: inline;
+  font-family: Calibri, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #343434;
+}
+.wrapper main .example-code-wrapper .task .task-desc {
+  display: inline;
+  font-family: Calibri, sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  color: #343434;
+}
+.wrapper main .example-code-wrapper .code-wrapper {
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+}
+.wrapper main .example-code-wrapper .code-wrapper .code-item {
+  font-size: 14px;
+}
+.wrapper main .example-code-wrapper .code-wrapper .code-item code {
+  cursor: text;
+}
+.wrapper main .example-code-wrapper .code-wrapper .code-indent {
+  margin-bottom: 10px;
+}
+.wrapper main .example-code-wrapper .code-wrapper p[data-level="1"] {
+  margin-left: 5px;
+}
+.wrapper main .example-code-wrapper .code-wrapper p[data-level="2"] {
+  margin-left: 20px;
+}
+.wrapper main .example-code-wrapper .code-wrapper p[data-level="3"] {
+  margin-left: 35px;
+}
+.wrapper main .work-experience .title-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.wrapper main .work-experience .title-wrapper .title-block--dark {
+  flex-basis: 37%;
+  padding: 3px 3px 3px 30px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #545454;
+  border-radius: 5px;
+}
+.wrapper main .work-experience .title-wrapper .line {
+  flex-basis: 55%;
+  border: 1px solid #545454;
+}
+.wrapper main .work-experience .subtitle {
+  font-family: Calibri, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #343434;
+}
+.wrapper main > div {
+  margin-bottom: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */

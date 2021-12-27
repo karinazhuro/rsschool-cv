@@ -10,8 +10,9 @@
   header {
     flex: 1;
     padding: 10px 18px;
+    margin-right: 6px;
 
-    background-color: $background-color;
+    background-color: $primary-variant-color;
     border-radius: 10px;
 
     .profile {
@@ -20,8 +21,8 @@
 
       .photo {
         width: 110px;
-        height: 116.02px;
-        padding: 0 10px 0 0;
+        height: 116px;
+        padding-right: 10px;
 
         border-radius: 50%;
       }
@@ -63,9 +64,10 @@
       }
     }
 
-    .contacts {
-      padding: 0;
+    .contacts-list {
       margin: 20px 0 13px;
+
+      list-style: none;
 
       .contact-item {
         display: flex;
@@ -74,7 +76,6 @@
         margin-bottom: 5px;
 
         background: $surface-color;
-        list-style: none;
         border-radius: 10px;
 
         .contact-icon {
@@ -112,7 +113,7 @@
       }
 
       .about-myself-text {
-        padding: 0 0 12px 0;
+        padding-bottom: 12px;
 
         font-family: Calibri, sans-serif;
         font-size: 14px;
@@ -126,25 +127,92 @@
     flex: 1;
     padding: 19px 14px;
 
-    .skills {
-      .title-block--dark {
-        padding: 3px 30px;
+    background-color: $background-color;
+    border-radius: 10px;
 
-        font-family: Montserrat, sans-serif;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 18px;
-        color: $on-primary-color;
-
-        background: #545454;
-        border-radius: 5px;
+    .skills-wrapper {
+      .title-wrapper {
+        @include title-wrapper;
       }
 
-      .coding-languages {
-        .subtitle {
+      .skills {
+        display: flex;
 
+        .skills-item-wrapper {
+          @include skills-item-wrapper;
+
+          &:not(:last-child) {
+            margin-right: 50px;
+          }
         }
       }
+    }
+
+    .example-code-wrapper {
+      .title-wrapper {
+        @include title-wrapper;
+      }
+
+      .task {
+        margin-bottom: 10px;
+
+        .subtitle {
+          display: inline;
+
+          @include subtitle;
+        }
+
+        .task-desc {
+          display: inline;
+
+          @include item;
+        }
+      }
+
+      .code-wrapper {
+        padding: 15px;
+
+        border: 1px solid $background-variant-color;
+        background: $on-primary-color;
+
+        .code-item {
+          font-size: 14px;
+
+          code {
+            cursor: text;
+          }
+        }
+
+        .code-indent {
+          margin-bottom: 10px;
+        }
+
+        p[data-level="1"] {
+          margin-left: 5px;
+        }
+
+        p[data-level="2"] {
+          margin-left: 20px;
+        }
+
+        p[data-level="3"] {
+          margin-left: 35px;
+        }
+      }
+    }
+
+    .work-experience {
+      .title-wrapper {
+        @include title-wrapper;
+      }
+
+      .subtitle {
+        @include subtitle;
+      }
+    }
+
+    & > div {
+      margin-bottom: 12px;
     }
   }
 }

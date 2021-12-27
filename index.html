@@ -19,7 +19,7 @@
         <p class="profession">Front-end Developer</p>
       </div>
     </div>
-    <ul class="contacts">
+    <ul class="contacts-list">
       <li class="contact-item">
         <img class="contact-icon" src="images/icons/location.svg" alt="location">
         <span class="contact-text">Minsk, Belarus</span>
@@ -78,11 +78,78 @@
     </div>
   </header>
   <main>
-    <div class="skills">
-      <h2 class="title-block--dark">Skills</h2>
-      <div class="coding-languages">
-        <h3 class="subtitle">Coding Languages</h3>
+    <div class="skills-wrapper">
+      <div class="title-wrapper">
+        <h2 class="title-block--dark">Skills</h2>
+        <div class="line"></div>
       </div>
+      <div class="skills">
+        <div class="skills-item-wrapper">
+          <h3 class="subtitle">Coding Languages</h3>
+          <ul class="skill-list">
+            <li class="skill-item">HTML5</li>
+            <li class="skill-item">CSS, SCSS</li>
+            <li class="skill-item">JavaScript</li>
+            <li class="skill-item">jQuery</li>
+            <li class="skill-item">React</li>
+          </ul>
+        </div>
+        <div class="skills-item-wrapper">
+          <h3 class="subtitle">Frameworks/Systems</h3>
+          <ul class="skill-list">
+            <li class="skill-item">Bootstrap</li>
+            <li class="skill-item">VS Code, WebStorm</li>
+            <li class="skill-item">Git</li>
+            <li class="skill-item">Gulp, Webpack, Babel</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="example-code-wrapper">
+      <div class="title-wrapper">
+        <h2 class="title-block--dark">Example code</h2>
+        <div class="line"></div>
+      </div>
+      <div class="task">
+        <h3 class="subtitle">Nickname Generator:</h3>
+        <p class="task-desc"> Write a function, <span>nicknameGenerator</span> that takes a string name as an argument
+          and returns the first 3 or 4 letters as a nickname. If the 3rd letter is a consonant, return the first 3
+          letters. If the 3rd letter is a vowel, return the first 4 letters. If the string is less than 4 characters,
+          return "Error: Name too short".
+        </p>
+      </div>
+      <div class="code-wrapper">
+        <p class="code-item" data-level="1">
+          <code>function nicknameGenerator(name){</code>
+        </p>
+        <p class="code-item" data-level="2">
+          <code>const vowel = 'aeiou';</code>
+        </p>
+        <p class="code-item code-indent" data-level="2">
+          <code>const shortName = name.substr(0, 3);</code>
+        </p>
+        <p class="code-item" data-level="2">
+          <code>if (name.length <= 3) return "Error: Name too short";</code>
+        </p>
+        <p class="code-item" data-level="2">
+          <code>if (!vowel.includes(shortName[2])) return shortName;</code>
+        </p>
+        <p class="code-item" data-level="2">
+          <code>else return name.substr(0, 4);</code>
+        </p>
+        <p class="code-item" data-level="1">
+          <code>}</code>
+        </p>
+      </div>
+    </div>
+    <div class="work-experience">
+      <div class="title-wrapper">
+        <h2 class="title-block--dark">Work experience</h2>
+        <div class="line"></div>
+      </div>
+      <h3 class="subtitle">"International state ecological Institute named after A.D.Sakharov" of the Belarusian state
+        University
+      </h3>
     </div>
   </main>
 </div>
