@@ -8,14 +8,16 @@ $surface-variant-color: #545454;
 $on-primary-color: #ffffff;
 $on-primary-variant-color: #343434;
 $on-secondary-color: #cecaca;
+$on-secondary-variant-color: rgba(0, 0, 0, 0.8);
+$on-background-color: rgba(84, 84, 84, 0.6);
 $on-surface-color: #fafafa;
+$on-surface-variant-color: #73808D;
 
 @mixin subtitle {
   font-family: Calibri, sans-serif;
   font-size: 16px;
   font-weight: bold;
   line-height: 18px;
-
   color: $on-primary-variant-color;
 }
 
@@ -23,19 +25,18 @@ $on-surface-color: #fafafa;
   font-family: Calibri, sans-serif;
   font-size: 14px;
   line-height: 19px;
-
   color: $on-primary-variant-color;
 }
 
-@mixin skills-item-wrapper {
+@mixin block-item-wrapper {
   .subtitle {
     @include subtitle;
   }
 
-  .skill-list {
+  .list {
     list-style: none;
 
-    .skill-item {
+    .item {
       @include item;
     }
   }
@@ -54,8 +55,8 @@ $on-surface-color: #fafafa;
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
-    color: $on-primary-color;
     text-transform: uppercase;
+    color: $on-primary-color;
 
     background: $surface-variant-color;
     border-radius: 5px;

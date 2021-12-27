@@ -2,6 +2,7 @@
 
 .wrapper {
   display: flex;
+  flex-wrap: wrap;
   padding: 10px 14px;
   margin: auto;
 
@@ -17,7 +18,7 @@
 
     .profile {
       display: flex;
-      margin: 0 0 20px 0;
+      margin-bottom: 20px;
 
       .photo {
         width: 110px;
@@ -64,33 +65,33 @@
       }
     }
 
-    .contacts-list {
-      margin: 20px 0 13px;
+    .contacts {
+      .contacts-list {
+        list-style: none;
 
-      list-style: none;
+        .contact-item {
+          display: flex;
+          align-items: center;
+          padding: 7px 14px;
+          margin-bottom: 5px;
 
-      .contact-item {
-        display: flex;
-        align-items: center;
-        padding: 7px 14px;
-        margin-bottom: 5px;
+          background: $surface-color;
+          border-radius: 10px;
 
-        background: $surface-color;
-        border-radius: 10px;
+          .contact-icon {
+            padding-right: 30px;
+          }
 
-        .contact-icon {
-          padding-right: 30px;
-        }
-
-        .contact-text {
-          font-family: Calibri, sans-serif;
-          font-size: 15px;
-          line-height: 18px;
-          color: $on-primary-color;
-
-          .link {
-            text-decoration: none;
+          .contact-text {
+            font-family: Calibri, sans-serif;
+            font-size: 15px;
+            line-height: 18px;
             color: $on-primary-color;
+
+            .link {
+              text-decoration: none;
+              color: $on-primary-color;
+            }
           }
         }
       }
@@ -121,6 +122,61 @@
         color: $on-surface-color;
       }
     }
+
+    .languages {
+      padding: 6px 12px 13px;
+      background-color: $surface-color;
+      border-radius: 10px;
+
+      .title-block--light {
+        padding: 6px 9px;
+        margin: 0;
+
+        font-family: Montserrat, sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        color: $on-primary-color;
+      }
+
+      .languages-list {
+        padding-left: 9px;
+
+        list-style: none;
+
+        .language-item {
+          display: flex;
+
+          .subtitle {
+            flex-basis: 30%;
+
+            font-family: Calibri, sans-serif;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+            color: $on-surface-color;
+          }
+
+          .language-level {
+            .level-item {
+              display: inline-block;
+              width: 8px;
+              height: 8px;
+
+              background-color: $on-secondary-color;
+              border-radius: 4px;
+            }
+
+            .get-level {
+              background-color: $on-background-color;
+            }
+          }
+        }
+      }
+    }
+
+    & > div {
+      margin-bottom: 20px;
+    }
   }
 
   main {
@@ -138,8 +194,8 @@
       .skills {
         display: flex;
 
-        .skills-item-wrapper {
-          @include skills-item-wrapper;
+        .block-item-wrapper {
+          @include block-item-wrapper;
 
           &:not(:last-child) {
             margin-right: 50px;
@@ -157,15 +213,16 @@
         margin-bottom: 10px;
 
         .subtitle {
+          @include subtitle;
+
           display: inline;
 
-          @include subtitle;
         }
 
         .task-desc {
-          display: inline;
-
           @include item;
+
+          display: inline;
         }
       }
 
@@ -201,13 +258,59 @@
       }
     }
 
-    .work-experience {
+    .work-experience-wrapper {
       .title-wrapper {
         @include title-wrapper;
       }
 
       .subtitle {
         @include subtitle;
+      }
+
+      .work-experience-profession {
+        @include item;
+
+        font-weight: normal;
+      }
+
+      .work-experience-per {
+        margin-bottom: 6px;
+
+        font-family: Calibri, sans-serif;
+        font-size: 12px;
+        line-height: 18px;
+        color: $on-surface-variant-color;
+      }
+
+      .work-experience-desc {
+        font-family: Calibri, sans-serif;
+        font-size: 14px;
+        line-height: 14px;
+        color: $on-secondary-variant-color;
+      }
+    }
+
+    .education-wrapper {
+      .title-wrapper {
+        @include title-wrapper;
+      }
+
+      .block-item-wrapper {
+        @include block-item-wrapper;
+
+        .list {
+          padding-left: 25px;
+
+          list-style: disc;
+        }
+
+        .link {
+          text-decoration: none;
+        }
+      }
+
+      & > div {
+        margin-bottom: 10px;
       }
     }
 

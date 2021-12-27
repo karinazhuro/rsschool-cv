@@ -1,5 +1,6 @@
 .wrapper {
   display: flex;
+  flex-wrap: wrap;
   padding: 10px 14px;
   margin: auto;
   background: linear-gradient(180deg, rgba(3, 56, 244, 0.71) 0%, rgba(224, 37, 206, 0.79) 93.75%);
@@ -13,7 +14,7 @@
 }
 .wrapper header .profile {
   display: flex;
-  margin: 0 0 20px 0;
+  margin-bottom: 20px;
 }
 .wrapper header .profile .photo {
   width: 110px;
@@ -48,11 +49,10 @@
   line-height: 18px;
   color: #cecaca;
 }
-.wrapper header .contacts-list {
-  margin: 20px 0 13px;
+.wrapper header .contacts .contacts-list {
   list-style: none;
 }
-.wrapper header .contacts-list .contact-item {
+.wrapper header .contacts .contacts-list .contact-item {
   display: flex;
   align-items: center;
   padding: 7px 14px;
@@ -60,16 +60,16 @@
   background: rgba(196, 196, 196, 0.35);
   border-radius: 10px;
 }
-.wrapper header .contacts-list .contact-item .contact-icon {
+.wrapper header .contacts .contacts-list .contact-item .contact-icon {
   padding-right: 30px;
 }
-.wrapper header .contacts-list .contact-item .contact-text {
+.wrapper header .contacts .contacts-list .contact-item .contact-text {
   font-family: Calibri, sans-serif;
   font-size: 15px;
   line-height: 18px;
   color: #ffffff;
 }
-.wrapper header .contacts-list .contact-item .contact-text .link {
+.wrapper header .contacts .contacts-list .contact-item .contact-text .link {
   text-decoration: none;
   color: #ffffff;
 }
@@ -93,6 +93,47 @@
   line-height: 18px;
   color: #fafafa;
 }
+.wrapper header .languages {
+  padding: 6px 12px 13px;
+  background-color: rgba(196, 196, 196, 0.35);
+  border-radius: 10px;
+}
+.wrapper header .languages .title-block--light {
+  padding: 6px 9px;
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.wrapper header .languages .languages-list {
+  padding-left: 9px;
+  list-style: none;
+}
+.wrapper header .languages .languages-list .language-item {
+  display: flex;
+}
+.wrapper header .languages .languages-list .language-item .subtitle {
+  flex-basis: 30%;
+  font-family: Calibri, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fafafa;
+}
+.wrapper header .languages .languages-list .language-item .language-level .level-item {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #cecaca;
+  border-radius: 4px;
+}
+.wrapper header .languages .languages-list .language-item .language-level .get-level {
+  background-color: rgba(84, 84, 84, 0.6);
+}
+.wrapper header > div {
+  margin-bottom: 20px;
+}
 .wrapper main {
   flex: 1;
   padding: 19px 14px;
@@ -111,8 +152,8 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
-  color: #ffffff;
   text-transform: uppercase;
+  color: #ffffff;
   background: #545454;
   border-radius: 5px;
 }
@@ -123,23 +164,23 @@
 .wrapper main .skills-wrapper .skills {
   display: flex;
 }
-.wrapper main .skills-wrapper .skills .skills-item-wrapper .subtitle {
+.wrapper main .skills-wrapper .skills .block-item-wrapper .subtitle {
   font-family: Calibri, sans-serif;
   font-size: 16px;
   font-weight: bold;
   line-height: 18px;
   color: #343434;
 }
-.wrapper main .skills-wrapper .skills .skills-item-wrapper .skill-list {
+.wrapper main .skills-wrapper .skills .block-item-wrapper .list {
   list-style: none;
 }
-.wrapper main .skills-wrapper .skills .skills-item-wrapper .skill-list .skill-item {
+.wrapper main .skills-wrapper .skills .block-item-wrapper .list .item {
   font-family: Calibri, sans-serif;
   font-size: 14px;
   line-height: 19px;
   color: #343434;
 }
-.wrapper main .skills-wrapper .skills .skills-item-wrapper:not(:last-child) {
+.wrapper main .skills-wrapper .skills .block-item-wrapper:not(:last-child) {
   margin-right: 50px;
 }
 .wrapper main .example-code-wrapper .title-wrapper {
@@ -154,8 +195,8 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
-  color: #ffffff;
   text-transform: uppercase;
+  color: #ffffff;
   background: #545454;
   border-radius: 5px;
 }
@@ -167,19 +208,19 @@
   margin-bottom: 10px;
 }
 .wrapper main .example-code-wrapper .task .subtitle {
-  display: inline;
   font-family: Calibri, sans-serif;
   font-size: 16px;
   font-weight: bold;
   line-height: 18px;
   color: #343434;
+  display: inline;
 }
 .wrapper main .example-code-wrapper .task .task-desc {
-  display: inline;
   font-family: Calibri, sans-serif;
   font-size: 14px;
   line-height: 19px;
   color: #343434;
+  display: inline;
 }
 .wrapper main .example-code-wrapper .code-wrapper {
   padding: 15px;
@@ -204,33 +245,100 @@
 .wrapper main .example-code-wrapper .code-wrapper p[data-level="3"] {
   margin-left: 35px;
 }
-.wrapper main .work-experience .title-wrapper {
+.wrapper main .work-experience-wrapper .title-wrapper {
   display: flex;
   align-items: center;
   margin-bottom: 12px;
 }
-.wrapper main .work-experience .title-wrapper .title-block--dark {
+.wrapper main .work-experience-wrapper .title-wrapper .title-block--dark {
   flex-basis: 37%;
   padding: 3px 3px 3px 30px;
   font-family: Montserrat, sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
-  color: #ffffff;
   text-transform: uppercase;
+  color: #ffffff;
   background: #545454;
   border-radius: 5px;
 }
-.wrapper main .work-experience .title-wrapper .line {
+.wrapper main .work-experience-wrapper .title-wrapper .line {
   flex-basis: 55%;
   border: 1px solid #545454;
 }
-.wrapper main .work-experience .subtitle {
+.wrapper main .work-experience-wrapper .subtitle {
   font-family: Calibri, sans-serif;
   font-size: 16px;
   font-weight: bold;
   line-height: 18px;
   color: #343434;
+}
+.wrapper main .work-experience-wrapper .work-experience-profession {
+  font-family: Calibri, sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  color: #343434;
+  font-weight: normal;
+}
+.wrapper main .work-experience-wrapper .work-experience-per {
+  margin-bottom: 6px;
+  font-family: Calibri, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  color: #73808D;
+}
+.wrapper main .work-experience-wrapper .work-experience-desc {
+  font-family: Calibri, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.wrapper main .education-wrapper .title-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.wrapper main .education-wrapper .title-wrapper .title-block--dark {
+  flex-basis: 37%;
+  padding: 3px 3px 3px 30px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #545454;
+  border-radius: 5px;
+}
+.wrapper main .education-wrapper .title-wrapper .line {
+  flex-basis: 55%;
+  border: 1px solid #545454;
+}
+.wrapper main .education-wrapper .block-item-wrapper .subtitle {
+  font-family: Calibri, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #343434;
+}
+.wrapper main .education-wrapper .block-item-wrapper .list {
+  list-style: none;
+}
+.wrapper main .education-wrapper .block-item-wrapper .list .item {
+  font-family: Calibri, sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  color: #343434;
+}
+.wrapper main .education-wrapper .block-item-wrapper .list {
+  padding-left: 25px;
+  list-style: disc;
+}
+.wrapper main .education-wrapper .block-item-wrapper .link {
+  text-decoration: none;
+}
+.wrapper main .education-wrapper > div {
+  margin-bottom: 10px;
 }
 .wrapper main > div {
   margin-bottom: 12px;

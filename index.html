@@ -5,6 +5,7 @@
   <title>CV#2. HTML, CSS & Git Basics</title>
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/669px.css">
 </head>
 <body>
 <div class="wrapper">
@@ -19,46 +20,50 @@
         <p class="profession">Front-end Developer</p>
       </div>
     </div>
-    <ul class="contacts-list">
-      <li class="contact-item">
-        <img class="contact-icon" src="images/icons/location.svg" alt="location">
-        <span class="contact-text">Minsk, Belarus</span>
-      </li>
-      <li class="contact-item">
-        <img class="contact-icon" src="images/icons/telegram.png" alt="telegram" width="24">
-        <span class="contact-text">
+    <div class="contacts">
+      <ul class="contacts-list">
+        <li class="contact-item">
+          <img class="contact-icon" src="images/icons/location.svg" alt="location">
+          <span class="contact-text">Minsk, Belarus</span>
+        </li>
+        <li class="contact-item">
+          <img class="contact-icon" src="images/icons/telegram.png" alt="telegram" width="24">
+          <span class="contact-text">
             <a class="link" href="https://t.me/KARINAZHURO" target="_blank">@KARINAZHURO</a>
           </span>
-      </li>
-      <li class="contact-item">
-        <img class="contact-icon" src="images/icons/mail.svg" alt="mail">
-        <span class="contact-text">
+        </li>
+        <li class="contact-item">
+          <img class="contact-icon" src="images/icons/mail.svg" alt="mail">
+          <span class="contact-text">
             <a class="link" href="mailto:kzhuro36@gmail.com" target="_blank">kzhuro36@gmail.com</a>
           </span>
-      </li>
-      <li class="contact-item">
-        <img class="contact-icon" src="images/icons/call.svg" alt="call">
-        <span class="contact-text">
+        </li>
+        <li class="contact-item">
+          <img class="contact-icon" src="images/icons/call.svg" alt="call">
+          <span class="contact-text">
             <a class="link" href="tel:+375 44 7333963">+375 44 7333963</a>
           </span>
-      </li>
-      <li class="contact-item">
-        <img class="contact-icon" src="images/icons/discord.png" alt="discord" width="24">
-        <span class="contact-text">karinazhuro#5892</span>
-      </li>
-      <li class="contact-item">
-        <img class="contact-icon" src="images/icons/linkedin.png" alt="linkedin" width="24">
-        <span class="contact-text">
-            <a class="link" href="https://www.linkedin.com/in/karina-zhuro/" target="_blank">www.linkedin.com/in/karina-zhuro/</a>
+        </li>
+        <li class="contact-item">
+          <img class="contact-icon" src="images/icons/discord.png" alt="discord" width="24">
+          <span class="contact-text">karinazhuro#5892</span>
+        </li>
+        <li class="contact-item">
+          <img class="contact-icon" src="images/icons/linkedin.png" alt="linkedin" width="24">
+          <span class="contact-text">
+            <a class="link" href="https://www.linkedin.com/in/karina-zhuro/" target="_blank">
+              www.linkedin.com/in/karina-zhuro/
+            </a>
           </span>
-      </li>
-      <li class="contact-item">
-        <img class="contact-icon" src="images/icons/github.png" alt="github" width="24">
-        <span class="contact-text">
+        </li>
+        <li class="contact-item">
+          <img class="contact-icon" src="images/icons/github.png" alt="github" width="24">
+          <span class="contact-text">
             <a class="link" href="https://www.github.com/karinazhuro" target="_blank">www.github.com/karinazhuro</a>
           </span>
-      </li>
-    </ul>
+        </li>
+      </ul>
+    </div>
     <div class="about-myself">
       <h2 class="title-block--light">About myself</h2>
       <p class="about-myself-text"> Hello, my name is Karina. <br>
@@ -76,6 +81,50 @@
         proficient Frontend Developer.
       </p>
     </div>
+    <div class="languages">
+      <h2 class="title-block--light">Languages</h2>
+      <ul class="languages-list">
+        <li class="language-item">
+          <h3 class="subtitle">English (Intermediate)</h3>
+          <div class="language-level">
+            <span class="level-item get-level"></span>
+            <span class="level-item get-level"></span>
+            <span class="level-item get-level"></span>
+            <span class="level-item get-level"></span>
+            <span class="level-item"></span>
+            <span class="level-item"></span>
+            <span class="level-item"></span>
+            <span class="level-item"></span>
+          </div>
+        </li>
+        <li class="language-item">
+          <h3 class="subtitle">Russian (Native)</h3>
+          <div class="language-level">
+            <span class="level-item get-level"></span>
+            <span class="level-item get-level"></span>
+            <span class="level-item get-level"></span>
+            <span class="level-item get-level"></span>
+            <span class="level-item get-level"></span>
+            <span class="level-item get-level"></span>
+            <span class="level-item get-level"></span>
+            <span class="level-item get-level"></span>
+          </div>
+        </li>
+        <li class="language-item">
+          <h3 class="subtitle">Spanish (Basic)</h3>
+          <div class="language-level">
+            <span class="level-item get-level"></span>
+            <span class="level-item"></span>
+            <span class="level-item"></span>
+            <span class="level-item"></span>
+            <span class="level-item"></span>
+            <span class="level-item"></span>
+            <span class="level-item"></span>
+            <span class="level-item"></span>
+          </div>
+        </li>
+      </ul>
+    </div>
   </header>
   <main>
     <div class="skills-wrapper">
@@ -84,23 +133,23 @@
         <div class="line"></div>
       </div>
       <div class="skills">
-        <div class="skills-item-wrapper">
+        <div class="block-item-wrapper">
           <h3 class="subtitle">Coding Languages</h3>
-          <ul class="skill-list">
-            <li class="skill-item">HTML5</li>
-            <li class="skill-item">CSS, SCSS</li>
-            <li class="skill-item">JavaScript</li>
-            <li class="skill-item">jQuery</li>
-            <li class="skill-item">React</li>
+          <ul class="list">
+            <li class="item">HTML5</li>
+            <li class="item">CSS, SCSS</li>
+            <li class="item">JavaScript</li>
+            <li class="item">jQuery</li>
+            <li class="item">React</li>
           </ul>
         </div>
-        <div class="skills-item-wrapper">
+        <div class="block-item-wrapper">
           <h3 class="subtitle">Frameworks/Systems</h3>
-          <ul class="skill-list">
-            <li class="skill-item">Bootstrap</li>
-            <li class="skill-item">VS Code, WebStorm</li>
-            <li class="skill-item">Git</li>
-            <li class="skill-item">Gulp, Webpack, Babel</li>
+          <ul class="list">
+            <li class="item">Bootstrap</li>
+            <li class="item">VS Code, WebStorm</li>
+            <li class="item">Git</li>
+            <li class="item">Gulp, Webpack, Babel</li>
           </ul>
         </div>
       </div>
@@ -142,7 +191,7 @@
         </p>
       </div>
     </div>
-    <div class="work-experience">
+    <div class="work-experience-wrapper">
       <div class="title-wrapper">
         <h2 class="title-block--dark">Work experience</h2>
         <div class="line"></div>
@@ -150,6 +199,51 @@
       <h3 class="subtitle">"International state ecological Institute named after A.D.Sakharov" of the Belarusian state
         University
       </h3>
+      <h2 class="work-experience-profession">Technical Specialist</h2>
+      <p class="work-experience-per">From 2019 to 2021 year</p>
+      <p class="work-experience-desc">I have been working as a technical specialist, developing a website on Wordpress
+        and a separate functional.
+      </p>
+    </div>
+    <div class="education-wrapper">
+      <div class="title-wrapper">
+        <h2 class="title-block--dark">Education</h2>
+        <div class="line"></div>
+      </div>
+      <div class="block-item-wrapper">
+        <h3 class="subtitle">Books</h3>
+        <ul class="list">
+          <li class="item">Jennifer Niederst Robbins "HTML5, CSS3 and JavaScript. Complete guide"</li>
+          <li class="item">Jon Duckett, "Javascript and jQuery. Interactive web development"</li>
+          <li class="item">JavaScript Manual on
+            <a class="link" href="https://learn.javascript.ru/">learn.javascript.ru</a>
+          </li>
+        </ul>
+      </div>
+      <div class="block-item-wrapper">
+        <h3 class="subtitle">Courses</h3>
+        <ul class="list">
+          <li class="item">React and Redux on the
+            <a class="link" href="https://www.udemy.com/">udemy.com</a> (completed)
+          </li>
+          <li class="item">RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
+        </ul>
+      </div>
+      <div class="block-item-wrapper">
+        <h3 class="subtitle">Pet Projects</h3>
+        <ul class="list">
+          <li class="item">I have experience in developing a non-commercial personal web-app for a pizzeria using React
+            like UI library and public REST API. Deploy in
+            <a class="link" href="https://karinazhuro.github.io/pzz-react/">GitHub Pages</a>.
+          </li>
+          <li class="item">Web-app 'Notes". Deploy in
+            <a class="link" href="https://karinazhuro.github.io/notes/">GitHub Pages</a>.
+          </li>
+          <li class="item">Full screen web-page (banner) for mobile devices with defined 7 locations. Deploy in
+            <a class="link" href="https://karinazhuro.github.io/banner/">GitHub Pages</a>.
+          </li>
+        </ul>
+      </div>
     </div>
   </main>
 </div>
