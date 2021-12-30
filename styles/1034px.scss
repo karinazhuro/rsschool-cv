@@ -1,0 +1,16 @@
+@media (max-width: 1034px) {
+  html, body {
+    .wrapper {
+      .content {
+        header {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }
+
+      footer {
+        max-width: 460px;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@media (max-width: 1034px) {
+  html .wrapper .content header, body .wrapper .content header {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  html .wrapper footer, body .wrapper footer {
+    max-width: 460px;
+  }
+}
+
+/*# sourceMappingURL=1034px.css.map */

@@ -1,34 +1,38 @@
-.wrapper {
+html, body {
+  height: 100%;
+}
+html .wrapper, body .wrapper {
+  min-height: 100%;
   padding: 10px 14px;
   background: linear-gradient(180deg, rgba(3, 56, 244, 0.71) 0%, rgba(224, 37, 206, 0.79) 93.75%);
 }
-.wrapper .content {
+html .wrapper .content, body .wrapper .content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 10px;
 }
-.wrapper .content header {
-  flex: 1;
+html .wrapper .content header, body .wrapper .content header {
+  max-width: 460px;
   padding: 10px 18px;
   margin-right: 6px;
   background-color: rgba(196, 196, 196, 0.3);
   border-radius: 10px;
 }
-.wrapper .content header .profile {
+html .wrapper .content header .profile, body .wrapper .content header .profile {
   display: flex;
   margin-bottom: 20px;
 }
-.wrapper .content header .profile .photo {
+html .wrapper .content header .profile .photo, body .wrapper .content header .profile .photo {
   width: 110px;
   height: 116px;
   padding-right: 10px;
   border-radius: 50%;
 }
-.wrapper .content header .profile .align {
+html .wrapper .content header .profile .align, body .wrapper .content header .profile .align {
   padding: 0 10px;
 }
-.wrapper .content header .profile .align .full-name .surname {
+html .wrapper .content header .profile .align .full-name .surname, body .wrapper .content header .profile .align .full-name .surname {
   margin: 5px 0;
   font-family: Montserrat, sans-serif;
   font-weight: normal;
@@ -36,7 +40,7 @@
   line-height: 30px;
   color: #cecaca;
 }
-.wrapper .content header .profile .align .full-name .name {
+html .wrapper .content header .profile .align .full-name .name, body .wrapper .content header .profile .align .full-name .name {
   margin: 5px 0;
   font-family: Montserrat, sans-serif;
   font-weight: 500;
@@ -44,7 +48,7 @@
   line-height: 43px;
   color: #ffffff;
 }
-.wrapper .content header .profile .align .profession {
+html .wrapper .content header .profile .align .profession, body .wrapper .content header .profile .align .profession {
   margin: 5px 0;
   font-family: Montserrat, sans-serif;
   font-weight: bold;
@@ -52,10 +56,10 @@
   line-height: 18px;
   color: #cecaca;
 }
-.wrapper .content header .contacts .contacts-list {
+html .wrapper .content header .contacts .contacts-list, body .wrapper .content header .contacts .contacts-list {
   list-style: none;
 }
-.wrapper .content header .contacts .contacts-list .contact-item {
+html .wrapper .content header .contacts .contacts-list .contact-item, body .wrapper .content header .contacts .contacts-list .contact-item {
   display: flex;
   align-items: center;
   padding: 7px 14px;
@@ -63,25 +67,25 @@
   background: rgba(196, 196, 196, 0.35);
   border-radius: 10px;
 }
-.wrapper .content header .contacts .contacts-list .contact-item .contact-icon {
+html .wrapper .content header .contacts .contacts-list .contact-item .contact-icon, body .wrapper .content header .contacts .contacts-list .contact-item .contact-icon {
   padding-right: 30px;
 }
-.wrapper .content header .contacts .contacts-list .contact-item .contact-text {
+html .wrapper .content header .contacts .contacts-list .contact-item .contact-text, body .wrapper .content header .contacts .contacts-list .contact-item .contact-text {
   font-family: Calibri, sans-serif;
   font-size: 15px;
   line-height: 18px;
   color: #ffffff;
 }
-.wrapper .content header .contacts .contacts-list .contact-item .contact-text .link {
+html .wrapper .content header .contacts .contacts-list .contact-item .contact-text .link, body .wrapper .content header .contacts .contacts-list .contact-item .contact-text .link {
   text-decoration: none;
   color: #ffffff;
 }
-.wrapper .content header .about-myself {
+html .wrapper .content header .about-myself, body .wrapper .content header .about-myself {
   padding: 6px 12px;
   background-color: rgba(196, 196, 196, 0.35);
   border-radius: 10px;
 }
-.wrapper .content header .about-myself .title-block--light {
+html .wrapper .content header .about-myself .title-block--light, body .wrapper .content header .about-myself .title-block--light {
   padding: 6px 9px;
   margin: 0;
   font-family: Montserrat, sans-serif;
@@ -89,19 +93,19 @@
   line-height: 18px;
   color: #ffffff;
 }
-.wrapper .content header .about-myself .about-myself-text {
+html .wrapper .content header .about-myself .about-myself-text, body .wrapper .content header .about-myself .about-myself-text {
   padding-bottom: 12px;
   font-family: Calibri, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #fafafa;
 }
-.wrapper .content header .languages {
+html .wrapper .content header .languages, body .wrapper .content header .languages {
   padding: 6px 12px 13px;
   background-color: rgba(196, 196, 196, 0.35);
   border-radius: 10px;
 }
-.wrapper .content header .languages .title-block--light {
+html .wrapper .content header .languages .title-block--light, body .wrapper .content header .languages .title-block--light {
   padding: 6px 9px;
   margin: 0;
   font-family: Montserrat, sans-serif;
@@ -109,14 +113,14 @@
   line-height: 18px;
   color: #ffffff;
 }
-.wrapper .content header .languages .languages-list {
+html .wrapper .content header .languages .languages-list, body .wrapper .content header .languages .languages-list {
   padding-left: 9px;
   list-style: none;
 }
-.wrapper .content header .languages .languages-list .language-item {
+html .wrapper .content header .languages .languages-list .language-item, body .wrapper .content header .languages .languages-list .language-item {
   display: flex;
 }
-.wrapper .content header .languages .languages-list .language-item .subtitle {
+html .wrapper .content header .languages .languages-list .language-item .subtitle, body .wrapper .content header .languages .languages-list .language-item .subtitle {
   flex-basis: 30%;
   font-family: Calibri, sans-serif;
   font-weight: normal;
@@ -124,31 +128,31 @@
   line-height: 18px;
   color: #fafafa;
 }
-.wrapper .content header .languages .languages-list .language-item .language-level .level-item {
+html .wrapper .content header .languages .languages-list .language-item .language-level .level-item, body .wrapper .content header .languages .languages-list .language-item .language-level .level-item {
   display: inline-block;
   width: 8px;
   height: 8px;
   background-color: #cecaca;
   border-radius: 4px;
 }
-.wrapper .content header .languages .languages-list .language-item .language-level .get-level {
+html .wrapper .content header .languages .languages-list .language-item .language-level .get-level, body .wrapper .content header .languages .languages-list .language-item .language-level .get-level {
   background-color: rgba(84, 84, 84, 0.6);
 }
-.wrapper .content header > div {
+html .wrapper .content header > div, body .wrapper .content header > div {
   margin-bottom: 20px;
 }
-.wrapper .content main {
-  flex: 1;
+html .wrapper .content main, body .wrapper .content main {
+  max-width: 460px;
   padding: 19px 14px;
   background-color: #ffffff;
   border-radius: 10px;
 }
-.wrapper .content main .skills-wrapper .title-wrapper {
+html .wrapper .content main .skills-wrapper .title-wrapper, body .wrapper .content main .skills-wrapper .title-wrapper {
   display: flex;
   align-items: center;
   margin-bottom: 12px;
 }
-.wrapper .content main .skills-wrapper .title-wrapper .title-block--dark {
+html .wrapper .content main .skills-wrapper .title-wrapper .title-block--dark, body .wrapper .content main .skills-wrapper .title-wrapper .title-block--dark {
   flex-basis: 37%;
   padding: 3px 3px 3px 30px;
   font-family: Montserrat, sans-serif;
@@ -160,38 +164,38 @@
   background: #545454;
   border-radius: 5px;
 }
-.wrapper .content main .skills-wrapper .title-wrapper .line {
+html .wrapper .content main .skills-wrapper .title-wrapper .line, body .wrapper .content main .skills-wrapper .title-wrapper .line {
   flex-basis: 55%;
   border: 1px solid #545454;
 }
-.wrapper .content main .skills-wrapper .skills {
+html .wrapper .content main .skills-wrapper .skills, body .wrapper .content main .skills-wrapper .skills {
   display: flex;
 }
-.wrapper .content main .skills-wrapper .skills .block-item-wrapper .subtitle {
+html .wrapper .content main .skills-wrapper .skills .block-item-wrapper .subtitle, body .wrapper .content main .skills-wrapper .skills .block-item-wrapper .subtitle {
   font-family: Calibri, sans-serif;
   font-size: 16px;
   font-weight: bold;
   line-height: 18px;
   color: #343434;
 }
-.wrapper .content main .skills-wrapper .skills .block-item-wrapper .list {
+html .wrapper .content main .skills-wrapper .skills .block-item-wrapper .list, body .wrapper .content main .skills-wrapper .skills .block-item-wrapper .list {
   list-style: none;
 }
-.wrapper .content main .skills-wrapper .skills .block-item-wrapper .list .item {
+html .wrapper .content main .skills-wrapper .skills .block-item-wrapper .list .item, body .wrapper .content main .skills-wrapper .skills .block-item-wrapper .list .item {
   font-family: Calibri, sans-serif;
   font-size: 14px;
   line-height: 19px;
   color: #343434;
 }
-.wrapper .content main .skills-wrapper .skills .block-item-wrapper:not(:last-child) {
+html .wrapper .content main .skills-wrapper .skills .block-item-wrapper:not(:last-child), body .wrapper .content main .skills-wrapper .skills .block-item-wrapper:not(:last-child) {
   margin-right: 50px;
 }
-.wrapper .content main .example-code-wrapper .title-wrapper {
+html .wrapper .content main .example-code-wrapper .title-wrapper, body .wrapper .content main .example-code-wrapper .title-wrapper {
   display: flex;
   align-items: center;
   margin-bottom: 12px;
 }
-.wrapper .content main .example-code-wrapper .title-wrapper .title-block--dark {
+html .wrapper .content main .example-code-wrapper .title-wrapper .title-block--dark, body .wrapper .content main .example-code-wrapper .title-wrapper .title-block--dark {
   flex-basis: 37%;
   padding: 3px 3px 3px 30px;
   font-family: Montserrat, sans-serif;
@@ -203,14 +207,14 @@
   background: #545454;
   border-radius: 5px;
 }
-.wrapper .content main .example-code-wrapper .title-wrapper .line {
+html .wrapper .content main .example-code-wrapper .title-wrapper .line, body .wrapper .content main .example-code-wrapper .title-wrapper .line {
   flex-basis: 55%;
   border: 1px solid #545454;
 }
-.wrapper .content main .example-code-wrapper .task {
+html .wrapper .content main .example-code-wrapper .task, body .wrapper .content main .example-code-wrapper .task {
   margin-bottom: 10px;
 }
-.wrapper .content main .example-code-wrapper .task .subtitle {
+html .wrapper .content main .example-code-wrapper .task .subtitle, body .wrapper .content main .example-code-wrapper .task .subtitle {
   font-family: Calibri, sans-serif;
   font-size: 16px;
   font-weight: bold;
@@ -218,42 +222,42 @@
   color: #343434;
   display: inline;
 }
-.wrapper .content main .example-code-wrapper .task .task-desc {
+html .wrapper .content main .example-code-wrapper .task .task-desc, body .wrapper .content main .example-code-wrapper .task .task-desc {
   font-family: Calibri, sans-serif;
   font-size: 14px;
   line-height: 19px;
   color: #343434;
   display: inline;
 }
-.wrapper .content main .example-code-wrapper .code-wrapper {
+html .wrapper .content main .example-code-wrapper .code-wrapper, body .wrapper .content main .example-code-wrapper .code-wrapper {
   padding: 15px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: #ffffff;
 }
-.wrapper .content main .example-code-wrapper .code-wrapper .code-item {
+html .wrapper .content main .example-code-wrapper .code-wrapper .code-item, body .wrapper .content main .example-code-wrapper .code-wrapper .code-item {
   font-size: 14px;
 }
-.wrapper .content main .example-code-wrapper .code-wrapper .code-item code {
+html .wrapper .content main .example-code-wrapper .code-wrapper .code-item code, body .wrapper .content main .example-code-wrapper .code-wrapper .code-item code {
   cursor: text;
 }
-.wrapper .content main .example-code-wrapper .code-wrapper .code-indent {
+html .wrapper .content main .example-code-wrapper .code-wrapper .code-indent, body .wrapper .content main .example-code-wrapper .code-wrapper .code-indent {
   margin-bottom: 10px;
 }
-.wrapper .content main .example-code-wrapper .code-wrapper p[data-level="1"] {
+html .wrapper .content main .example-code-wrapper .code-wrapper p[data-level="1"], body .wrapper .content main .example-code-wrapper .code-wrapper p[data-level="1"] {
   margin-left: 5px;
 }
-.wrapper .content main .example-code-wrapper .code-wrapper p[data-level="2"] {
+html .wrapper .content main .example-code-wrapper .code-wrapper p[data-level="2"], body .wrapper .content main .example-code-wrapper .code-wrapper p[data-level="2"] {
   margin-left: 20px;
 }
-.wrapper .content main .example-code-wrapper .code-wrapper p[data-level="3"] {
+html .wrapper .content main .example-code-wrapper .code-wrapper p[data-level="3"], body .wrapper .content main .example-code-wrapper .code-wrapper p[data-level="3"] {
   margin-left: 35px;
 }
-.wrapper .content main .work-experience-wrapper .title-wrapper {
+html .wrapper .content main .work-experience-wrapper .title-wrapper, body .wrapper .content main .work-experience-wrapper .title-wrapper {
   display: flex;
   align-items: center;
   margin-bottom: 12px;
 }
-.wrapper .content main .work-experience-wrapper .title-wrapper .title-block--dark {
+html .wrapper .content main .work-experience-wrapper .title-wrapper .title-block--dark, body .wrapper .content main .work-experience-wrapper .title-wrapper .title-block--dark {
   flex-basis: 37%;
   padding: 3px 3px 3px 30px;
   font-family: Montserrat, sans-serif;
@@ -265,43 +269,43 @@
   background: #545454;
   border-radius: 5px;
 }
-.wrapper .content main .work-experience-wrapper .title-wrapper .line {
+html .wrapper .content main .work-experience-wrapper .title-wrapper .line, body .wrapper .content main .work-experience-wrapper .title-wrapper .line {
   flex-basis: 55%;
   border: 1px solid #545454;
 }
-.wrapper .content main .work-experience-wrapper .subtitle {
+html .wrapper .content main .work-experience-wrapper .subtitle, body .wrapper .content main .work-experience-wrapper .subtitle {
   font-family: Calibri, sans-serif;
   font-size: 16px;
   font-weight: bold;
   line-height: 18px;
   color: #343434;
 }
-.wrapper .content main .work-experience-wrapper .work-experience-profession {
+html .wrapper .content main .work-experience-wrapper .work-experience-profession, body .wrapper .content main .work-experience-wrapper .work-experience-profession {
   font-family: Calibri, sans-serif;
   font-size: 14px;
   line-height: 19px;
   color: #343434;
   font-weight: normal;
 }
-.wrapper .content main .work-experience-wrapper .work-experience-per {
+html .wrapper .content main .work-experience-wrapper .work-experience-per, body .wrapper .content main .work-experience-wrapper .work-experience-per {
   margin-bottom: 6px;
   font-family: Calibri, sans-serif;
   font-size: 12px;
   line-height: 18px;
   color: #73808D;
 }
-.wrapper .content main .work-experience-wrapper .work-experience-desc {
+html .wrapper .content main .work-experience-wrapper .work-experience-desc, body .wrapper .content main .work-experience-wrapper .work-experience-desc {
   font-family: Calibri, sans-serif;
   font-size: 14px;
   line-height: 14px;
   color: rgba(0, 0, 0, 0.8);
 }
-.wrapper .content main .education-wrapper .title-wrapper {
+html .wrapper .content main .education-wrapper .title-wrapper, body .wrapper .content main .education-wrapper .title-wrapper {
   display: flex;
   align-items: center;
   margin-bottom: 12px;
 }
-.wrapper .content main .education-wrapper .title-wrapper .title-block--dark {
+html .wrapper .content main .education-wrapper .title-wrapper .title-block--dark, body .wrapper .content main .education-wrapper .title-wrapper .title-block--dark {
   flex-basis: 37%;
   padding: 3px 3px 3px 30px;
   font-family: Montserrat, sans-serif;
@@ -313,48 +317,50 @@
   background: #545454;
   border-radius: 5px;
 }
-.wrapper .content main .education-wrapper .title-wrapper .line {
+html .wrapper .content main .education-wrapper .title-wrapper .line, body .wrapper .content main .education-wrapper .title-wrapper .line {
   flex-basis: 55%;
   border: 1px solid #545454;
 }
-.wrapper .content main .education-wrapper .block-item-wrapper .subtitle {
+html .wrapper .content main .education-wrapper .block-item-wrapper .subtitle, body .wrapper .content main .education-wrapper .block-item-wrapper .subtitle {
   font-family: Calibri, sans-serif;
   font-size: 16px;
   font-weight: bold;
   line-height: 18px;
   color: #343434;
 }
-.wrapper .content main .education-wrapper .block-item-wrapper .list {
+html .wrapper .content main .education-wrapper .block-item-wrapper .list, body .wrapper .content main .education-wrapper .block-item-wrapper .list {
   list-style: none;
 }
-.wrapper .content main .education-wrapper .block-item-wrapper .list .item {
+html .wrapper .content main .education-wrapper .block-item-wrapper .list .item, body .wrapper .content main .education-wrapper .block-item-wrapper .list .item {
   font-family: Calibri, sans-serif;
   font-size: 14px;
   line-height: 19px;
   color: #343434;
 }
-.wrapper .content main .education-wrapper .block-item-wrapper .list {
+html .wrapper .content main .education-wrapper .block-item-wrapper .list, body .wrapper .content main .education-wrapper .block-item-wrapper .list {
   padding-left: 25px;
   list-style: disc;
 }
-.wrapper .content main .education-wrapper .block-item-wrapper .link {
+html .wrapper .content main .education-wrapper .block-item-wrapper .link, body .wrapper .content main .education-wrapper .block-item-wrapper .link {
   text-decoration: none;
 }
-.wrapper .content main .education-wrapper > div {
+html .wrapper .content main .education-wrapper > div, body .wrapper .content main .education-wrapper > div {
   margin-bottom: 10px;
 }
-.wrapper .content main > div {
+html .wrapper .content main > div, body .wrapper .content main > div {
   margin-bottom: 12px;
 }
-.wrapper footer {
+html .wrapper footer, body .wrapper footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 956px;
   padding: 10px 18px;
+  margin: auto;
   background-color: rgba(196, 196, 196, 0.3);
   border-radius: 10px;
 }
-.wrapper footer .year-created {
+html .wrapper footer .year-created, body .wrapper footer .year-created {
   padding: 6px 9px;
   margin: 0;
   font-family: Montserrat, sans-serif;
