@@ -9,19 +9,46 @@
 </head>
 <body>
 <div class="wrapper">
-  <div class="content">
-    <header>
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="link" href="#contacts">Contacts</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="#about-myself">About myself</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="#languages">Languages</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="#example-code">Example code</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="#work-experience">Work experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="#education">Education</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="personal-info">
       <div class="profile">
-        <img class="photo" src="images/photo.JPG" alt="logo">
+        <img class="photo" src="images/photo.JPG" alt="photo">
         <div class="align">
           <div class="full-name">
             <p class="surname">Zhuro</p>
             <p class="name">Karina</p>
           </div>
-          <p class="profession">Front-end Developer</p>
+          <h1 class="profession">Front-end Developer</h1>
         </div>
       </div>
-      <div class="contacts">
+      <div class="contacts" id="contacts">
         <ul class="contacts-list">
           <li class="contact-item">
             <img class="contact-icon" src="images/icons/location.svg" alt="location">
@@ -65,7 +92,7 @@
           </li>
         </ul>
       </div>
-      <div class="about-myself">
+      <div class="about-myself" id="about-myself">
         <h2 class="title-block--light">About myself</h2>
         <p class="about-myself-text"> Hello, my name is Karina. <br>
           I can be called a responsible and attentive person. I respect other people's opinions, I make compromises, but
@@ -83,7 +110,7 @@
           proficient Frontend Developer.
         </p>
       </div>
-      <div class="languages">
+      <div class="languages" id="languages">
         <h2 class="title-block--light">Languages</h2>
         <ul class="languages-list">
           <li class="language-item">
@@ -127,9 +154,9 @@
           </li>
         </ul>
       </div>
-    </header>
-    <main>
-      <div class="skills-wrapper">
+    </div>
+    <div class="basic-info">
+      <div class="skills-wrapper" id="skills">
         <div class="title-wrapper">
           <h2 class="title-block--dark">Skills</h2>
           <div class="line"></div>
@@ -156,7 +183,7 @@
           </div>
         </div>
       </div>
-      <div class="example-code-wrapper">
+      <div class="example-code-wrapper" id="example-code">
         <div class="title-wrapper">
           <h2 class="title-block--dark">Example code</h2>
           <div class="line"></div>
@@ -193,7 +220,7 @@
           </p>
         </div>
       </div>
-      <div class="work-experience-wrapper">
+      <div class="work-experience-wrapper" id="work-experience">
         <div class="title-wrapper">
           <h2 class="title-block--dark">Work experience</h2>
           <div class="line"></div>
@@ -207,7 +234,7 @@
           and a separate functional.
         </p>
       </div>
-      <div class="education-wrapper">
+      <div class="education-wrapper" id="education">
         <div class="title-wrapper">
           <h2 class="title-block--dark">Education</h2>
           <div class="line"></div>
@@ -248,8 +275,8 @@
           </ul>
         </div>
       </div>
-    </main>
-  </div>
+    </div>
+  </main>
   <footer>
       <div class="github-link">
         <a class="link" href="https://www.github.com/karinazhuro" target="_blank">

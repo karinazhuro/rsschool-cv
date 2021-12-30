@@ -9,14 +9,41 @@ html, body {
 
     background: $primary-color;
 
-    .content {
+    header {
+      padding: 7px;
+      margin-bottom: 10px;
+
+      background-color: $primary-variant-color;
+      border-radius: 10px;
+
+      nav {
+        .nav-list {
+          display: flex;
+          justify-content: space-around;
+          list-style: none;
+
+          .nav-item {
+            font-family: Calibri, sans-serif;
+            font-size: 15px;
+            line-height: 18px;
+            color: $on-primary-color;
+
+            .link {
+              text-decoration: none;
+              color: $on-primary-color;
+            }
+          }
+        }
+      }
+    }
+
+    main {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       margin-bottom: 10px;
 
-      header {
-        //flex: 1;
+      .personal-info {
         max-width: 460px;
         padding: 10px 18px;
         margin-right: 6px;
@@ -187,7 +214,7 @@ html, body {
         }
       }
 
-      main {
+      .basic-info {
         //flex: 1;
         max-width: 460px;
         padding: 19px 14px;
