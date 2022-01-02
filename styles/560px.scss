@@ -1,0 +1,17 @@
+@media (max-width: 560px) {
+  html, body {
+    .wrapper {
+      header {
+        nav {
+          .nav-list {
+            flex-direction: column;
+
+            .nav-item {
+              padding: 3px 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
