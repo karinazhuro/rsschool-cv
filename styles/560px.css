@@ -1,0 +1,10 @@
+@media (max-width: 560px) {
+  html .wrapper header nav .nav-list, body .wrapper header nav .nav-list {
+    flex-direction: column;
+  }
+  html .wrapper header nav .nav-list .nav-item, body .wrapper header nav .nav-list .nav-item {
+    padding: 3px 10px;
+  }
+}
+
+/*# sourceMappingURL=560px.css.map */
