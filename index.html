@@ -69,7 +69,7 @@
           <li class="contact-item">
             <img class="contact-icon" src="images/icons/call.svg" alt="call">
             <span class="contact-text">
-            <a class="link" href="tel:+375 44 7333963">+375 44 7333963</a>
+            <a class="link" href="tel:+375447333963">+375 44 7333963</a>
           </span>
           </li>
           <li class="contact-item">
@@ -207,7 +207,7 @@
             <code>const shortName = name.substr(0, 3);</code>
           </p>
           <p class="code-item" data-level="2">
-            <code>if (name.length <= 3) return "Error: Name too short";</code>
+            <code>if (name.length <&lt; 3) return "Error: Name too short";</code>
           </p>
           <p class="code-item" data-level="2">
             <code>if (!vowel.includes(shortName[2])) return shortName;</code>
