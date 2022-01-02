@@ -1,15 +1,22 @@
 @media (max-width: 1034px) {
   html, body {
     .wrapper {
-      .content {
-        header {
+      header {
+        //max-width: 568px;
+      }
+
+      main {
+        flex-direction: column;
+        align-items: center;
+
+        .personal-info {
           margin-right: 0;
           margin-bottom: 10px;
         }
       }
 
       footer {
-        max-width: 460px;
+        //max-width: 550px;
       }
     }
   }

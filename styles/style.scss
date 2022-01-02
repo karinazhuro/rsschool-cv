@@ -10,19 +10,25 @@ html, body {
     background: $primary-color;
 
     header {
-      padding: 7px;
       margin-bottom: 10px;
 
-      background-color: $primary-variant-color;
-      border-radius: 10px;
-
       nav {
+        max-width: 956px;
+        padding: 10px 18px;
+        margin-right: auto;
+        margin-left: auto;
+
+        background-color: $primary-variant-color;
+        border-radius: 10px;
+
         .nav-list {
           display: flex;
           justify-content: space-around;
           list-style: none;
 
           .nav-item {
+            padding: 0 10px;
+
             font-family: Calibri, sans-serif;
             font-size: 15px;
             line-height: 18px;
@@ -39,7 +45,6 @@ html, body {
 
     main {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
       margin-bottom: 10px;
 
@@ -215,7 +220,6 @@ html, body {
       }
 
       .basic-info {
-        //flex: 1;
         max-width: 460px;
         padding: 19px 14px;
 
@@ -357,24 +361,27 @@ html, body {
     }
 
     footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 956px;
-      padding: 10px 18px;
-      margin: auto;
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 956px;
+        padding: 10px 18px;
+        margin-right: auto;
+        margin-left: auto;
 
-      background-color: $primary-variant-color;
-      border-radius: 10px;
+        background-color: $primary-variant-color;
+        border-radius: 10px;
 
-      .year-created {
-        padding: 6px 9px;
-        margin: 0;
+        .year-created {
+          padding: 6px 9px;
+          margin: 0;
 
-        font-family: Montserrat, sans-serif;
-        font-size: 14px;
-        line-height: 18px;
-        color: $on-primary-color;
+          font-family: Montserrat, sans-serif;
+          font-size: 14px;
+          line-height: 18px;
+          color: $on-primary-color;
+        }
       }
     }
   }
