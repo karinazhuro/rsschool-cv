@@ -1,0 +1,60 @@
+body header {
+  background: url("../img/bg.jpg") no-repeat center 0;
+}
+body header .header-container {
+  display: flex;
+  max-width: 1440px;
+  padding: 20px;
+  margin: 0 auto;
+}
+body header .header-container .logo {
+  transition: 0.3s;
+}
+body header .header-container .logo:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+body header .header-container nav {
+  margin-left: auto;
+}
+body header .header-container nav .nav-list {
+  display: flex;
+  padding: 0 15px;
+  margin: 0;
+  list-style: none;
+}
+body header .header-container nav .nav-list .nav-item {
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  line-height: 50px;
+}
+body header .header-container nav .nav-list .nav-item .nav-link {
+  padding: 0 15px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.3s;
+}
+body header .header-container nav .nav-list .nav-item .nav-link:hover {
+  color: #bdae82;
+}
+body header .header-container .switch-lng {
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+  color: #ffffff;
+}
+body header .header-container .switch-lng .lng-current {
+  color: #bdae82;
+}
+body main .container {
+  max-width: 1440px;
+  padding: 20px;
+  margin: 0 auto;
+}
+body footer .container {
+  max-width: 1440px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */

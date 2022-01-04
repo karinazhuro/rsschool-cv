@@ -1,0 +1,78 @@
+@import "var";
+
+body {
+  header {
+    background: url('../img/bg.jpg') no-repeat center 0;
+
+    .header-container {
+      display: flex;
+
+      @include container;
+
+      .logo {
+        transition: 0.3s;
+
+        &:hover {
+          filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+          contrast(87%);
+        }
+      }
+
+      nav {
+        margin-left: auto;
+
+        .nav-list {
+          display: flex;
+          padding: 0 15px;
+          margin: 0;
+
+          list-style: none;
+
+          .nav-item {
+
+            font-family: Inter, sans-serif;
+            font-size: 20px;
+            line-height: 50px;
+
+            .nav-link {
+              padding: 0 15px;
+
+              text-decoration: none;
+              color: $on-primary-color;
+
+              transition: .3s;
+
+              &:hover {
+                color: $on-secondary-color;
+              }
+            }
+          }
+        }
+      }
+
+      .switch-lng {
+        font-family: Inter, sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 50px;
+        color: $on-primary-color;
+
+        .lng-current {
+          color: $on-secondary-color;
+        }
+      }
+    }
+  }
+
+  main {
+    .container {
+      @include container;
+    }
+  }
+
+  footer {
+    .container {
+      @include container;
+    }
+  }
+}

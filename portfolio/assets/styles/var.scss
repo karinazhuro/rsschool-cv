@@ -1,0 +1,8 @@
+$on-primary-color: #ffffff;
+$on-secondary-color: #bdae82;
+
+@mixin container {
+  max-width: 1440px;
+  padding: 20px;
+  margin: 0 auto;
+}
