@@ -1,11 +1,15 @@
+body {
+  font-family: Inter, sans-serif;
+}
 body header {
+  padding: 20px 0;
   background: url("../img/bg.jpg") no-repeat center 0;
 }
 body header .header-container {
-  display: flex;
   max-width: 1440px;
-  padding: 20px;
+  padding: 0 20px;
   margin: 0 auto;
+  display: flex;
 }
 body header .header-container .logo {
   transition: 0.3s;
@@ -23,7 +27,7 @@ body header .header-container nav .nav-list {
   list-style: none;
 }
 body header .header-container nav .nav-list .nav-item {
-  font-family: Inter, sans-serif;
+  font-family: inherit;
   font-size: 20px;
   line-height: 50px;
 }
@@ -37,7 +41,7 @@ body header .header-container nav .nav-list .nav-item .nav-link:hover {
   color: #bdae82;
 }
 body header .header-container .switch-lng {
-  font-family: Inter, sans-serif;
+  font-family: inherit;
   font-weight: bold;
   font-size: 20px;
   line-height: 50px;
@@ -46,14 +50,48 @@ body header .header-container .switch-lng {
 body header .header-container .switch-lng .lng-current {
   color: #bdae82;
 }
-body main .container {
+body main .main-container .hero-container {
   max-width: 1440px;
-  padding: 20px;
+  padding: 0 20px;
   margin: 0 auto;
+  padding-top: 160px;
+  padding-bottom: 325px;
+  padding-left: 80px;
+  background-image: url("../img/bg.jpg");
+  background-position: center -94px;
+  background-repeat: no-repeat;
+}
+body main .main-container .hero-container .hero-title {
+  margin: 0 0 10px;
+  font-family: Merriweather, serif;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 120px;
+  color: #ffffff;
+}
+body main .main-container .hero-container .hero-text {
+  width: 400px;
+  padding-bottom: 25px;
+  margin: 0;
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  color: #ffffff;
+}
+body main .main-container .hero-container .btn {
+  padding: 8px 72px;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 40px;
+  color: #000000;
+  border: 0;
+  background-color: #bdae82;
+  cursor: pointer;
 }
 body footer .container {
   max-width: 1440px;
-  padding: 20px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
