@@ -89,6 +89,78 @@ body main .main-container .hero-container .btn {
   background-color: #bdae82;
   cursor: pointer;
 }
+body main .main-container .skills-container {
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
+  background-color: #000000;
+}
+body main .main-container .skills-container .section-title-wrapper {
+  width: 50%;
+  padding: 100px 0 80px;
+  margin: auto;
+  overflow-x: hidden;
+}
+body main .main-container .skills-container .section-title-wrapper .section-title {
+  position: relative;
+  margin: 0;
+  font-family: Merriweather, serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 80px;
+  text-align: center;
+  color: #bdae82;
+}
+body main .main-container .skills-container .section-title-wrapper .section-title::before {
+  position: absolute;
+  top: 50%;
+  right: 60%;
+  width: 50%;
+  height: 2px;
+  content: "";
+  background: #bdae82;
+  border-radius: 0;
+}
+body main .main-container .skills-container .section-title-wrapper .section-title::after {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  width: 50%;
+  height: 2px;
+  content: "";
+  background: #bdae82;
+  border-radius: 0;
+}
+body main .main-container .skills-container .skills-items {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2px;
+}
+body main .main-container .skills-container .skills-items .skill-item {
+  width: 320px;
+  padding: 0 20px 8px;
+}
+body main .main-container .skills-container .skills-items .skill-item .skill-img {
+  display: block;
+  margin: 0 auto 50px;
+}
+body main .main-container .skills-container .skills-items .skill-item .skill-title {
+  margin: 0 0 20px;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+}
+body main .main-container .skills-container .skills-items .skill-item .skill-text {
+  margin: 0;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+}
 body footer .container {
   max-width: 1440px;
   padding: 0 20px;
