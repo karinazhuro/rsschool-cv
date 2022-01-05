@@ -9,3 +9,64 @@ $on-surface-color: #000000;
   padding: 0 20px;
   margin: 0 auto;
 }
+
+@mixin btn($color, $background-color, $border) {
+  padding: 8px 72px;
+
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 40px;
+  color: $color;
+
+  border: $border;
+  background-color: $background-color;
+
+  cursor: pointer;
+}
+
+@mixin section-title-wrapper($margin) {
+  width: 50%;
+  padding: 100px 0 60px;
+  margin: auto;
+
+  overflow-x: hidden;
+
+  .section-title {
+    position: relative;
+
+    margin: 0;
+
+    font-family: Merriweather, serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+    color: $on-secondary-color;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      right: $margin;
+
+      width: 50%;
+      height: 2px;
+
+      content: "";
+      background: $on-secondary-color;
+      border-radius: 0;
+    }
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: $margin;
+
+      width: 50%;
+      height: 2px;
+
+      content: "";
+      background: $on-secondary-color;
+      border-radius: 0;
+    }
+  }
+}
