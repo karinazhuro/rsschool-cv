@@ -168,7 +168,7 @@ body {
           margin-bottom: 60px;
 
           .btn {
-            @include btn(8px 72px,$on-secondary-color, $on-surface-color, 1px solid $on-secondary-color);
+            @include btn(8px 72px, $on-secondary-color, $on-surface-color, 1px solid $on-secondary-color);
 
             &:not(:last-child) {
               margin-right: 5px;
@@ -222,6 +222,7 @@ body {
           display: flex;
           flex-wrap: wrap;
           column-gap: 7px;
+          padding-bottom: 100px;
 
           .price-item {
             width: 450px;
@@ -273,12 +274,110 @@ body {
           }
         }
       }
+
+      .contacts-container {
+        @include container;
+
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 60px;
+        padding-bottom: 152px;
+
+        background-size: auto 700px;
+        background: url('../img/contacts.jpg') no-repeat;
+
+        .contacts-wrapper {
+          .section-title {
+            margin: 0 0 40px;
+
+            font-family: Merriweather, serif;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 80px;
+            color: $on-secondary-color;
+          }
+
+          .form-contacts {
+            .form-item {
+              display: block;
+              width: 450px;
+              padding: 5px 20px;
+
+              font-family: inherit;
+              font-size: 20px;
+              line-height: 40px;
+              color: $on-secondary-color;
+
+              background: $surface-color;
+              border: 2px solid $on-secondary-color;
+              border-radius: 0;
+
+              &::placeholder {
+                font-family: inherit;
+                font-size: 20px;
+                color: $on-secondary-color;
+              }
+
+              &:not(:last-child) {
+                height: 50px;
+                margin-bottom: 20px;
+              }
+
+              &:last-child {
+                margin-bottom: 30px;
+              }
+            }
+
+            textarea {
+              height: 100px;
+
+              resize: none;
+            }
+          }
+
+          .btn {
+            @include btn(8px 40px, $on-surface-color, $on-secondary-color, 1px)
+          }
+        }
+      }
     }
   }
 
   footer {
-    .container {
+    .footer-container {
       @include container;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+      background-color: $background-color;
+
+      .footer-data {
+        @include footer-text;
+
+        .footer-data-item {
+          &:not(:last-child) {
+            margin-right: 20px;
+          }
+        }
+      }
+
+      .school {
+        @include footer-text;
+
+        margin: 0;
+      }
+
+      .social-list {
+        .social-list-item {
+          &:not(:last-child) {
+            margin-right: 20px;
+          }
+        }
+      }
     }
   }
 }

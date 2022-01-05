@@ -1,4 +1,5 @@
 $background-color: #000000;
+$surface-color: rgba(0, 0, 0, 0.5);
 
 $on-primary-color: #ffffff;
 $on-secondary-color: #bdae82;
@@ -12,7 +13,6 @@ $on-surface-color: #000000;
 
 @mixin btn($padding, $color, $background-color, $border) {
   padding: $padding;
-  //padding: 8px 72px;
 
   font-family: inherit;
   font-size: 20px;
@@ -70,4 +70,12 @@ $on-surface-color: #000000;
       border-radius: 0;
     }
   }
+}
+
+
+@mixin footer-text {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 50px;
+  color: $on-primary-color;
 }

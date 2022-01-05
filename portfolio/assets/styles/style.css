@@ -333,6 +333,7 @@ body main .main-container .price-container .price-items {
   display: flex;
   flex-wrap: wrap;
   column-gap: 7px;
+  padding-bottom: 100px;
 }
 body main .main-container .price-container .price-items .price-item {
   width: 450px;
@@ -379,10 +380,92 @@ body main .main-container .price-container .price-items .price-item .btn {
   background-color: #bdae82;
   cursor: pointer;
 }
-body footer .container {
+body main .main-container .contacts-container {
   max-width: 1440px;
   padding: 0 20px;
   margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 60px;
+  padding-bottom: 152px;
+  background-size: auto 700px;
+  background: url("../img/contacts.jpg") no-repeat;
+}
+body main .main-container .contacts-container .contacts-wrapper .section-title {
+  margin: 0 0 40px;
+  font-family: Merriweather, serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 80px;
+  color: #bdae82;
+}
+body main .main-container .contacts-container .contacts-wrapper .form-contacts .form-item {
+  display: block;
+  width: 450px;
+  padding: 5px 20px;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 40px;
+  color: #bdae82;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #bdae82;
+  border-radius: 0;
+}
+body main .main-container .contacts-container .contacts-wrapper .form-contacts .form-item::placeholder {
+  font-family: inherit;
+  font-size: 20px;
+  color: #bdae82;
+}
+body main .main-container .contacts-container .contacts-wrapper .form-contacts .form-item:not(:last-child) {
+  height: 50px;
+  margin-bottom: 20px;
+}
+body main .main-container .contacts-container .contacts-wrapper .form-contacts .form-item:last-child {
+  margin-bottom: 30px;
+}
+body main .main-container .contacts-container .contacts-wrapper .form-contacts textarea {
+  height: 100px;
+  resize: none;
+}
+body main .main-container .contacts-container .contacts-wrapper .btn {
+  padding: 8px 40px;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 40px;
+  color: #000000;
+  border: 1px;
+  background-color: #bdae82;
+  cursor: pointer;
+}
+body footer .footer-container {
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #000000;
+}
+body footer .footer-container .footer-data {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 50px;
+  color: #ffffff;
+}
+body footer .footer-container .footer-data .footer-data-item:not(:last-child) {
+  margin-right: 20px;
+}
+body footer .footer-container .school {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 50px;
+  color: #ffffff;
+  margin: 0;
+}
+body footer .footer-container .social-list .social-list-item:not(:last-child) {
+  margin-right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
