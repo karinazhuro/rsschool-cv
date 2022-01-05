@@ -236,6 +236,57 @@ body main .main-container .portfolio-container .portfolio-items {
   justify-content: center;
   gap: 15px;
 }
+body main .main-container .video-container {
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
+  background-color: #000000;
+}
+body main .main-container .video-container .section-title-wrapper {
+  width: 50%;
+  padding: 100px 0 60px;
+  margin: auto;
+  overflow-x: hidden;
+}
+body main .main-container .video-container .section-title-wrapper .section-title {
+  position: relative;
+  margin: 0;
+  font-family: Merriweather, serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 80px;
+  text-align: center;
+  color: #bdae82;
+}
+body main .main-container .video-container .section-title-wrapper .section-title::before {
+  position: absolute;
+  top: 50%;
+  right: 65%;
+  width: 50%;
+  height: 2px;
+  content: "";
+  background: #bdae82;
+  border-radius: 0;
+}
+body main .main-container .video-container .section-title-wrapper .section-title::after {
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  width: 50%;
+  height: 2px;
+  content: "";
+  background: #bdae82;
+  border-radius: 0;
+}
+body main .main-container .video-container .video-player {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .main-container .video-container .video-player .play-hover {
+  position: absolute;
+}
 body footer .container {
   max-width: 1440px;
   padding: 0 20px;

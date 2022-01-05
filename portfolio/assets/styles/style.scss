@@ -187,6 +187,27 @@ body {
           gap: 15px;
         }
       }
+
+      .video-container {
+        @include container;
+
+        background-color: $background-color;
+
+        .section-title-wrapper {
+          @include section-title-wrapper(65%);
+        }
+
+        .video-player {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .play-hover {
+            position: absolute;
+          }
+        }
+      }
     }
   }
 
