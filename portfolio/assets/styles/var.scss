@@ -10,8 +10,9 @@ $on-surface-color: #000000;
   margin: 0 auto;
 }
 
-@mixin btn($color, $background-color, $border) {
-  padding: 8px 72px;
+@mixin btn($padding, $color, $background-color, $border) {
+  padding: $padding;
+  //padding: 8px 72px;
 
   font-family: inherit;
   font-size: 20px;

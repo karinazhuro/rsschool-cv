@@ -103,7 +103,7 @@ body {
         }
 
         .btn {
-          @include btn($on-surface-color, $on-secondary-color, 1px);
+          @include btn(8px 72px, $on-surface-color, $on-secondary-color, 1px);
         }
       }
 
@@ -168,7 +168,7 @@ body {
           margin-bottom: 60px;
 
           .btn {
-            @include btn($on-secondary-color, $on-surface-color, 1px solid $on-secondary-color);
+            @include btn(8px 72px,$on-secondary-color, $on-surface-color, 1px solid $on-secondary-color);
 
             &:not(:last-child) {
               margin-right: 5px;
@@ -176,7 +176,7 @@ body {
           }
 
           .btn-select {
-            @include btn($on-surface-color, $on-secondary-color, 1px);
+            @include btn(8px 72px, $on-surface-color, $on-secondary-color, 1px);
           }
         }
 
@@ -194,7 +194,7 @@ body {
         background-color: $background-color;
 
         .section-title-wrapper {
-          @include section-title-wrapper(65%);
+          @include section-title-wrapper(60%);
         }
 
         .video-player {
@@ -205,6 +205,71 @@ body {
 
           .play-hover {
             position: absolute;
+          }
+        }
+      }
+
+      .price-container {
+        @include container;
+
+        background-color: $background-color;
+
+        .section-title-wrapper {
+          @include section-title-wrapper(60%);
+        }
+
+        .price-items {
+          display: flex;
+          flex-wrap: wrap;
+          column-gap: 7px;
+
+          .price-item {
+            width: 450px;
+            padding: 43px 0;
+
+            text-align: center;
+
+            border: 3px solid $on-secondary-color;
+
+            .price-item-title {
+              margin: 0 0 20px;
+
+              font-family: Merriweather, serif;
+              font-weight: bold;
+              font-size: 28px;
+              line-height: 56px;
+              text-align: center;
+              color: $on-primary-color;
+            }
+
+            .price-item-cost {
+              margin: 0 0 20px;
+
+              font-family: Merriweather, serif;
+              font-weight: bold;
+              font-size: 24px;
+              line-height: 48px;
+              text-align: center;
+              color: $on-secondary-color;
+            }
+
+            .price-item-desc {
+              margin-bottom: 40px;
+
+              & > span {
+                display: block;
+
+                font-family: inherit;
+                font-size: 18px;
+                line-height: 36px;
+                text-align: center;
+                color: $on-primary-color;
+              }
+            }
+
+            .btn {
+              @include btn(8px 39px, $on-surface-color, $on-secondary-color, 1px)
+            }
           }
         }
       }
