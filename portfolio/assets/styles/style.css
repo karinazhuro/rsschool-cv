@@ -1,56 +1,61 @@
-body {
+html {
+  scroll-behavior: smooth;
+}
+html body {
   font-family: Inter, sans-serif;
 }
-body header {
-  padding: 20px 0;
-  background: url("../img/bg.jpg") no-repeat center 0;
-}
-body header .header-container {
+html body header .header-container {
   max-width: 1440px;
   padding: 0 20px;
   margin: 0 auto;
   display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: url("../img/bg.jpg") no-repeat center 0;
 }
-body header .header-container .logo {
+html body header .header-container .logo {
   transition: 0.3s;
 }
-body header .header-container .logo:hover {
+html body header .header-container .logo:hover {
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
-body header .header-container nav {
+html body header .header-container nav {
   margin-left: auto;
 }
-body header .header-container nav .nav-list {
+html body header .header-container nav .nav-list {
   display: flex;
   padding: 0 15px;
   margin: 0;
   list-style: none;
 }
-body header .header-container nav .nav-list .nav-item {
+html body header .header-container nav .nav-list .nav-item {
   font-family: inherit;
   font-size: 20px;
   line-height: 50px;
 }
-body header .header-container nav .nav-list .nav-item .nav-link {
+html body header .header-container nav .nav-list .nav-item .nav-link {
   padding: 0 15px;
   text-decoration: none;
   color: #ffffff;
   transition: 0.3s;
 }
-body header .header-container nav .nav-list .nav-item .nav-link:hover {
+html body header .header-container nav .nav-list .nav-item .nav-link:hover {
   color: #bdae82;
 }
-body header .header-container .switch-lng {
+html body header .header-container .switch-lng {
   font-family: inherit;
   font-weight: bold;
   font-size: 20px;
   line-height: 50px;
   color: #ffffff;
 }
-body header .header-container .switch-lng .lng-current {
+html body header .header-container .switch-lng .lng-current {
   color: #bdae82;
 }
-body main .main-container .hero-container {
+html body header .header-container .switch-lng .switcher {
+  margin: 0 8px;
+}
+html body main .main-container .hero-container {
   max-width: 1440px;
   padding: 0 20px;
   margin: 0 auto;
@@ -58,10 +63,10 @@ body main .main-container .hero-container {
   padding-bottom: 325px;
   padding-left: 80px;
   background-image: url("../img/bg.jpg");
-  background-position: center -94px;
+  background-position: center -93px;
   background-repeat: no-repeat;
 }
-body main .main-container .hero-container .hero-title {
+html body main .main-container .hero-container .hero-title {
   margin: 0 0 10px;
   font-family: Merriweather, serif;
   font-weight: bold;
@@ -69,7 +74,7 @@ body main .main-container .hero-container .hero-title {
   line-height: 120px;
   color: #ffffff;
 }
-body main .main-container .hero-container .hero-text {
+html body main .main-container .hero-container .hero-text {
   width: 400px;
   padding-bottom: 25px;
   margin: 0;
@@ -79,29 +84,35 @@ body main .main-container .hero-container .hero-text {
   line-height: 40px;
   color: #ffffff;
 }
-body main .main-container .hero-container .btn {
+html body main .main-container .hero-container .btn {
   padding: 8px 72px;
   font-family: inherit;
   font-size: 20px;
   line-height: 40px;
   color: #000000;
-  border: 1px;
   background-color: #bdae82;
+  outline: 1px solid #bdae82;
+  border: 0;
   cursor: pointer;
+  transition: 0.3s;
 }
-body main .main-container .skills-container {
+html body main .main-container .hero-container .btn:hover {
+  color: #bdae82;
+  background-color: #000000;
+}
+html body main .main-container .skills-container {
   max-width: 1440px;
   padding: 0 20px;
   margin: 0 auto;
   background-color: #000000;
 }
-body main .main-container .skills-container .section-title-wrapper {
+html body main .main-container .skills-container .section-title-wrapper {
   width: 50%;
   padding: 100px 0 60px;
   margin: auto;
   overflow-x: hidden;
 }
-body main .main-container .skills-container .section-title-wrapper .section-title {
+html body main .main-container .skills-container .section-title-wrapper .section-title {
   position: relative;
   margin: 0;
   font-family: Merriweather, serif;
@@ -111,7 +122,7 @@ body main .main-container .skills-container .section-title-wrapper .section-titl
   text-align: center;
   color: #bdae82;
 }
-body main .main-container .skills-container .section-title-wrapper .section-title::before {
+html body main .main-container .skills-container .section-title-wrapper .section-title::before {
   position: absolute;
   top: 50%;
   right: 60%;
@@ -121,7 +132,7 @@ body main .main-container .skills-container .section-title-wrapper .section-titl
   background: #bdae82;
   border-radius: 0;
 }
-body main .main-container .skills-container .section-title-wrapper .section-title::after {
+html body main .main-container .skills-container .section-title-wrapper .section-title::after {
   position: absolute;
   top: 50%;
   left: 60%;
@@ -131,20 +142,20 @@ body main .main-container .skills-container .section-title-wrapper .section-titl
   background: #bdae82;
   border-radius: 0;
 }
-body main .main-container .skills-container .skills-items {
+html body main .main-container .skills-container .skills-items {
   display: flex;
   justify-content: space-between;
   padding-bottom: 2px;
 }
-body main .main-container .skills-container .skills-items .skill-item {
+html body main .main-container .skills-container .skills-items .skill-item {
   width: 320px;
   padding: 0 20px 8px;
 }
-body main .main-container .skills-container .skills-items .skill-item .skill-img {
+html body main .main-container .skills-container .skills-items .skill-item .skill-img {
   display: block;
   margin: 0 auto 50px;
 }
-body main .main-container .skills-container .skills-items .skill-item .skill-title {
+html body main .main-container .skills-container .skills-items .skill-item .skill-title {
   margin: 0 0 20px;
   font-family: inherit;
   font-weight: bold;
@@ -153,7 +164,7 @@ body main .main-container .skills-container .skills-items .skill-item .skill-tit
   text-align: center;
   color: #ffffff;
 }
-body main .main-container .skills-container .skills-items .skill-item .skill-text {
+html body main .main-container .skills-container .skills-items .skill-item .skill-text {
   margin: 0;
   font-family: inherit;
   font-size: 18px;
@@ -161,19 +172,19 @@ body main .main-container .skills-container .skills-items .skill-item .skill-tex
   text-align: center;
   color: #ffffff;
 }
-body main .main-container .portfolio-container {
+html body main .main-container .portfolio-container {
   max-width: 1440px;
   padding: 0 20px;
   margin: 0 auto;
   background-color: #000000;
 }
-body main .main-container .portfolio-container .section-title-wrapper {
+html body main .main-container .portfolio-container .section-title-wrapper {
   width: 50%;
   padding: 100px 0 60px;
   margin: auto;
   overflow-x: hidden;
 }
-body main .main-container .portfolio-container .section-title-wrapper .section-title {
+html body main .main-container .portfolio-container .section-title-wrapper .section-title {
   position: relative;
   margin: 0;
   font-family: Merriweather, serif;
@@ -183,7 +194,7 @@ body main .main-container .portfolio-container .section-title-wrapper .section-t
   text-align: center;
   color: #bdae82;
 }
-body main .main-container .portfolio-container .section-title-wrapper .section-title::before {
+html body main .main-container .portfolio-container .section-title-wrapper .section-title::before {
   position: absolute;
   top: 50%;
   right: 65%;
@@ -193,7 +204,7 @@ body main .main-container .portfolio-container .section-title-wrapper .section-t
   background: #bdae82;
   border-radius: 0;
 }
-body main .main-container .portfolio-container .section-title-wrapper .section-title::after {
+html body main .main-container .portfolio-container .section-title-wrapper .section-title::after {
   position: absolute;
   top: 50%;
   left: 65%;
@@ -203,52 +214,64 @@ body main .main-container .portfolio-container .section-title-wrapper .section-t
   background: #bdae82;
   border-radius: 0;
 }
-body main .main-container .portfolio-container .portfolio-btns {
+html body main .main-container .portfolio-container .portfolio-btns {
   text-align: center;
   margin-bottom: 60px;
 }
-body main .main-container .portfolio-container .portfolio-btns .btn {
+html body main .main-container .portfolio-container .portfolio-btns .btn {
   padding: 8px 72px;
   font-family: inherit;
   font-size: 20px;
   line-height: 40px;
   color: #bdae82;
-  border: 1px solid #bdae82;
   background-color: #000000;
+  outline: 1px solid #bdae82;
+  border: 0;
   cursor: pointer;
+  transition: 0.3s;
 }
-body main .main-container .portfolio-container .portfolio-btns .btn:not(:last-child) {
+html body main .main-container .portfolio-container .portfolio-btns .btn:hover {
+  color: #000000;
+  background-color: #bdae82;
+}
+html body main .main-container .portfolio-container .portfolio-btns .btn:not(:last-child) {
   margin-right: 5px;
 }
-body main .main-container .portfolio-container .portfolio-btns .btn-select {
+html body main .main-container .portfolio-container .portfolio-btns .btn-select {
   padding: 8px 72px;
   font-family: inherit;
   font-size: 20px;
   line-height: 40px;
   color: #000000;
-  border: 1px;
   background-color: #bdae82;
+  outline: 1px solid #bdae82;
+  border: 0;
   cursor: pointer;
+  transition: 0.3s;
 }
-body main .main-container .portfolio-container .portfolio-items {
+html body main .main-container .portfolio-container .portfolio-btns .btn-select:hover {
+  color: #bdae82;
+  background-color: #000000;
+}
+html body main .main-container .portfolio-container .portfolio-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
 }
-body main .main-container .video-container {
+html body main .main-container .video-container {
   max-width: 1440px;
   padding: 0 20px;
   margin: 0 auto;
   background-color: #000000;
 }
-body main .main-container .video-container .section-title-wrapper {
+html body main .main-container .video-container .section-title-wrapper {
   width: 50%;
   padding: 100px 0 60px;
   margin: auto;
   overflow-x: hidden;
 }
-body main .main-container .video-container .section-title-wrapper .section-title {
+html body main .main-container .video-container .section-title-wrapper .section-title {
   position: relative;
   margin: 0;
   font-family: Merriweather, serif;
@@ -258,7 +281,7 @@ body main .main-container .video-container .section-title-wrapper .section-title
   text-align: center;
   color: #bdae82;
 }
-body main .main-container .video-container .section-title-wrapper .section-title::before {
+html body main .main-container .video-container .section-title-wrapper .section-title::before {
   position: absolute;
   top: 50%;
   right: 60%;
@@ -268,7 +291,7 @@ body main .main-container .video-container .section-title-wrapper .section-title
   background: #bdae82;
   border-radius: 0;
 }
-body main .main-container .video-container .section-title-wrapper .section-title::after {
+html body main .main-container .video-container .section-title-wrapper .section-title::after {
   position: absolute;
   top: 50%;
   left: 60%;
@@ -278,28 +301,38 @@ body main .main-container .video-container .section-title-wrapper .section-title
   background: #bdae82;
   border-radius: 0;
 }
-body main .main-container .video-container .video-player {
+html body main .main-container .video-container .video-player {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-body main .main-container .video-container .video-player .play-hover {
+html body main .main-container .video-container .video-player .play-hover {
   position: absolute;
+  width: 130px;
+  height: 130px;
+  background-image: url("../svg/play-hover.png");
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
-body main .main-container .price-container {
+html body main .main-container .video-container .video-player .play-hover:hover {
+  transform: scale(1.2);
+}
+html body main .main-container .price-container {
   max-width: 1440px;
   padding: 0 20px;
   margin: 0 auto;
   background-color: #000000;
 }
-body main .main-container .price-container .section-title-wrapper {
+html body main .main-container .price-container .section-title-wrapper {
   width: 50%;
   padding: 100px 0 60px;
   margin: auto;
   overflow-x: hidden;
 }
-body main .main-container .price-container .section-title-wrapper .section-title {
+html body main .main-container .price-container .section-title-wrapper .section-title {
   position: relative;
   margin: 0;
   font-family: Merriweather, serif;
@@ -309,7 +342,7 @@ body main .main-container .price-container .section-title-wrapper .section-title
   text-align: center;
   color: #bdae82;
 }
-body main .main-container .price-container .section-title-wrapper .section-title::before {
+html body main .main-container .price-container .section-title-wrapper .section-title::before {
   position: absolute;
   top: 50%;
   right: 60%;
@@ -319,7 +352,7 @@ body main .main-container .price-container .section-title-wrapper .section-title
   background: #bdae82;
   border-radius: 0;
 }
-body main .main-container .price-container .section-title-wrapper .section-title::after {
+html body main .main-container .price-container .section-title-wrapper .section-title::after {
   position: absolute;
   top: 50%;
   left: 60%;
@@ -329,19 +362,19 @@ body main .main-container .price-container .section-title-wrapper .section-title
   background: #bdae82;
   border-radius: 0;
 }
-body main .main-container .price-container .price-items {
+html body main .main-container .price-container .price-items {
   display: flex;
   flex-wrap: wrap;
   column-gap: 7px;
   padding-bottom: 100px;
 }
-body main .main-container .price-container .price-items .price-item {
+html body main .main-container .price-container .price-items .price-item {
   width: 450px;
   padding: 43px 0;
   text-align: center;
   border: 3px solid #bdae82;
 }
-body main .main-container .price-container .price-items .price-item .price-item-title {
+html body main .main-container .price-container .price-items .price-item .price-item-title {
   margin: 0 0 20px;
   font-family: Merriweather, serif;
   font-weight: bold;
@@ -350,7 +383,7 @@ body main .main-container .price-container .price-items .price-item .price-item-
   text-align: center;
   color: #ffffff;
 }
-body main .main-container .price-container .price-items .price-item .price-item-cost {
+html body main .main-container .price-container .price-items .price-item .price-item-cost {
   margin: 0 0 20px;
   font-family: Merriweather, serif;
   font-weight: bold;
@@ -359,10 +392,10 @@ body main .main-container .price-container .price-items .price-item .price-item-
   text-align: center;
   color: #bdae82;
 }
-body main .main-container .price-container .price-items .price-item .price-item-desc {
+html body main .main-container .price-container .price-items .price-item .price-item-desc {
   margin-bottom: 40px;
 }
-body main .main-container .price-container .price-items .price-item .price-item-desc > span {
+html body main .main-container .price-container .price-items .price-item .price-item-desc > span {
   display: block;
   font-family: inherit;
   font-size: 18px;
@@ -370,17 +403,23 @@ body main .main-container .price-container .price-items .price-item .price-item-
   text-align: center;
   color: #ffffff;
 }
-body main .main-container .price-container .price-items .price-item .btn {
+html body main .main-container .price-container .price-items .price-item .btn {
   padding: 8px 39px;
   font-family: inherit;
   font-size: 20px;
   line-height: 40px;
   color: #000000;
-  border: 1px;
   background-color: #bdae82;
+  outline: 1px solid #bdae82;
+  border: 0;
   cursor: pointer;
+  transition: 0.3s;
 }
-body main .main-container .contacts-container {
+html body main .main-container .price-container .price-items .price-item .btn:hover {
+  color: #bdae82;
+  background-color: #000000;
+}
+html body main .main-container .contacts-container {
   max-width: 1440px;
   padding: 0 20px;
   margin: 0 auto;
@@ -391,7 +430,7 @@ body main .main-container .contacts-container {
   background-size: auto 700px;
   background: url("../img/contacts.jpg") no-repeat;
 }
-body main .main-container .contacts-container .contacts-wrapper .section-title {
+html body main .main-container .contacts-container .contacts-wrapper .section-title {
   margin: 0 0 40px;
   font-family: Merriweather, serif;
   font-weight: bold;
@@ -399,7 +438,7 @@ body main .main-container .contacts-container .contacts-wrapper .section-title {
   line-height: 80px;
   color: #bdae82;
 }
-body main .main-container .contacts-container .contacts-wrapper .form-contacts .form-item {
+html body main .main-container .contacts-container .contacts-wrapper .form-contacts .form-item {
   display: block;
   width: 450px;
   padding: 5px 20px;
@@ -410,34 +449,41 @@ body main .main-container .contacts-container .contacts-wrapper .form-contacts .
   background: rgba(0, 0, 0, 0.5);
   border: 2px solid #bdae82;
   border-radius: 0;
+  outline: none;
 }
-body main .main-container .contacts-container .contacts-wrapper .form-contacts .form-item::placeholder {
+html body main .main-container .contacts-container .contacts-wrapper .form-contacts .form-item::placeholder {
   font-family: inherit;
   font-size: 20px;
   color: #bdae82;
 }
-body main .main-container .contacts-container .contacts-wrapper .form-contacts .form-item:not(:last-child) {
+html body main .main-container .contacts-container .contacts-wrapper .form-contacts .form-item:not(:last-child) {
   height: 50px;
   margin-bottom: 20px;
 }
-body main .main-container .contacts-container .contacts-wrapper .form-contacts .form-item:last-child {
+html body main .main-container .contacts-container .contacts-wrapper .form-contacts .form-item:last-child {
   margin-bottom: 30px;
 }
-body main .main-container .contacts-container .contacts-wrapper .form-contacts textarea {
+html body main .main-container .contacts-container .contacts-wrapper .form-contacts textarea {
   height: 100px;
   resize: none;
 }
-body main .main-container .contacts-container .contacts-wrapper .btn {
+html body main .main-container .contacts-container .contacts-wrapper .btn {
   padding: 8px 40px;
   font-family: inherit;
   font-size: 20px;
   line-height: 40px;
   color: #000000;
-  border: 1px;
   background-color: #bdae82;
+  outline: 1px solid #bdae82;
+  border: 0;
   cursor: pointer;
+  transition: 0.3s;
 }
-body footer .footer-container {
+html body main .main-container .contacts-container .contacts-wrapper .btn:hover {
+  color: #bdae82;
+  background-color: #000000;
+}
+html body footer .footer-container {
   max-width: 1440px;
   padding: 0 20px;
   margin: 0 auto;
@@ -446,25 +492,37 @@ body footer .footer-container {
   align-items: center;
   padding-top: 50px;
   padding-bottom: 50px;
+  color: #ffffff;
   background-color: #000000;
 }
-body footer .footer-container .footer-data {
+html body footer .footer-container .footer-data {
   font-family: inherit;
   font-size: 20px;
   line-height: 50px;
-  color: #ffffff;
 }
-body footer .footer-container .footer-data .footer-data-item:not(:last-child) {
+html body footer .footer-container .footer-data .footer-data-item:not(:last-child) {
   margin-right: 20px;
 }
-body footer .footer-container .school {
+html body footer .footer-container .footer-data .footer-data-item .link {
   font-family: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+html body footer .footer-container .link {
+  font-family: inherit;
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
   font-size: 20px;
   line-height: 50px;
-  color: #ffffff;
-  margin: 0;
 }
-body footer .footer-container .social-list .social-list-item:not(:last-child) {
+html body footer .footer-container .social-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+html body footer .footer-container .social-list .social-list-item:not(:last-child) {
   margin-right: 20px;
 }
 

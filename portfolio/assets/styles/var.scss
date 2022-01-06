@@ -11,7 +11,7 @@ $on-surface-color: #000000;
   margin: 0 auto;
 }
 
-@mixin btn($padding, $color, $background-color, $border) {
+@mixin btn($padding, $color, $background-color) {
   padding: $padding;
 
   font-family: inherit;
@@ -19,10 +19,17 @@ $on-surface-color: #000000;
   line-height: 40px;
   color: $color;
 
-  border: $border;
   background-color: $background-color;
+  outline: 1px solid $on-secondary-color;
+  border: 0;
 
   cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    color: $background-color;
+    background-color: $color;
+  }
 }
 
 @mixin section-title-wrapper($margin) {
@@ -72,10 +79,8 @@ $on-surface-color: #000000;
   }
 }
 
-
-@mixin footer-text {
+@mixin link {
   font-family: inherit;
-  font-size: 20px;
-  line-height: 50px;
-  color: $on-primary-color;
+  text-decoration: none;
+  color: inherit;
 }
