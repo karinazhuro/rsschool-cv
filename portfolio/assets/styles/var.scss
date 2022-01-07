@@ -30,6 +30,12 @@ $on-surface-color: #000000;
     color: $background-color;
     background-color: $color;
   }
+
+  &:active {
+    color: $color;
+    background-color: $background-color;
+    transition: 0.3s;
+  }
 }
 
 @mixin section-title-wrapper($margin) {

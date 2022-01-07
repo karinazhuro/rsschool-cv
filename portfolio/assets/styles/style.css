@@ -9,6 +9,7 @@ html body header .header-container {
   padding: 0 20px;
   margin: 0 auto;
   display: flex;
+  box-sizing: border-box;
   padding-top: 20px;
   padding-bottom: 20px;
   background: url("../img/bg.jpg") no-repeat center 0;
@@ -99,6 +100,11 @@ html body main .main-container .hero-container .btn {
 html body main .main-container .hero-container .btn:hover {
   color: #bdae82;
   background-color: #000000;
+}
+html body main .main-container .hero-container .btn:active {
+  color: #000000;
+  background-color: #bdae82;
+  transition: 0.3s;
 }
 html body main .main-container .skills-container {
   max-width: 1440px;
@@ -234,6 +240,11 @@ html body main .main-container .portfolio-container .portfolio-btns .btn:hover {
   color: #000000;
   background-color: #bdae82;
 }
+html body main .main-container .portfolio-container .portfolio-btns .btn:active {
+  color: #bdae82;
+  background-color: #000000;
+  transition: 0.3s;
+}
 html body main .main-container .portfolio-container .portfolio-btns .btn:not(:last-child) {
   margin-right: 5px;
 }
@@ -252,6 +263,11 @@ html body main .main-container .portfolio-container .portfolio-btns .btn-select 
 html body main .main-container .portfolio-container .portfolio-btns .btn-select:hover {
   color: #bdae82;
   background-color: #000000;
+}
+html body main .main-container .portfolio-container .portfolio-btns .btn-select:active {
+  color: #000000;
+  background-color: #bdae82;
+  transition: 0.3s;
 }
 html body main .main-container .portfolio-container .portfolio-items {
   display: flex;
@@ -419,6 +435,11 @@ html body main .main-container .price-container .price-items .price-item .btn:ho
   color: #bdae82;
   background-color: #000000;
 }
+html body main .main-container .price-container .price-items .price-item .btn:active {
+  color: #000000;
+  background-color: #bdae82;
+  transition: 0.3s;
+}
 html body main .main-container .contacts-container {
   max-width: 1440px;
   padding: 0 20px;
@@ -482,6 +503,11 @@ html body main .main-container .contacts-container .contacts-wrapper .btn {
 html body main .main-container .contacts-container .contacts-wrapper .btn:hover {
   color: #bdae82;
   background-color: #000000;
+}
+html body main .main-container .contacts-container .contacts-wrapper .btn:active {
+  color: #000000;
+  background-color: #bdae82;
+  transition: 0.3s;
 }
 html body footer .footer-container {
   max-width: 1440px;
