@@ -13,30 +13,19 @@
 ## About myself:
 
 Hello, my name is Karina.\
+I am starting my career like a Front-end developer.
+
 I can be called a responsible and attentive person. I respect other people's opinions, I make compromises, but at the
 same time I know how to defend my point of view. I treat my work with maximum efficiency.
 
-When I was studying as an environmental engineer, I already had a desire to change my field of activity and develop in a
-different direction, I realized that my interests were completely different and began to study programming. Programming,
-and more specifically front-end development, I have been studying for more than 3 years. All the knowledge that I have I
-got myself.
-
-I believe, that my ability to learn and to gain new skills will lead me through this path of becoming a proficient
-Frontend Developer.
-
 ## Skills:
 
-### Coding Languages:
-
-* HTML/SCSS
+* HTML/SCSS, БЭМ
+* semantics, validity
+* Bootstrap
 * JavaScript
 * jQuery
 * React
-
-### Frameworks/Systems:
-
-* Bootstrap
-* VS Code, WebStorm
 * Git
 * Gulp, Webpack, Babel
 
@@ -70,6 +59,11 @@ functional.
 
 ## Education:
 
+**University:**
+
+'International state ecological Institute named after A.D.Sakharov' of the Belarusian state University \
+Bachelor of Environmental Engineer
+
 **Books:**
 
 * Jennifer Niederst Robbins "HTML5, CSS3 and JavaScript. Complete guide"
@@ -79,15 +73,25 @@ functional.
 **Courses:**
 
 * React and Redux on the [udemy.com](https://www.udemy.com/) (completed)
-* RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
+* RS Schools Course «JavaScript/Front-end» (in progress)
 
 **Pet Projects:**
 
-* I have experience in developing a non-commercial personal web-app for a pizzeria using React like UI library and
-  public REST API. Deploy in [GitHub Pages](https://karinazhuro.github.io/pzz-react/).
-* Web-app 'Notes". Deploy in [GitHub Pages](https://karinazhuro.github.io/notes/).
-* Full screen web-page (banner) for mobile devices with defined 7 locations. Deploy
-  in [GitHub Pages](https://karinazhuro.github.io/banner/).
+* Non-commercial personal web-app for a [pizzeria](https://karinazhuro.github.io/pzz-react/) using React like UI library 
+and public REST API.
+* Web-app ['Notes'](https://karinazhuro.github.io/notes/) using React. You can create, edit, and delete notes in the 
+application. You can also create tags in several ways - in the tag field and in the note. Implemented sorting of notes 
+by tags.
+* A [full-screen web page](https://karinazhuro.github.io/banner/) (banner) for mobile devices. Localization into 7 
+languages using i18n has been implemented.
+* Single application page ["Portfolio"](https://rolling-scopes-school.github.io/karinazhuro-JSFEPRESCHOOL/portfolio/).
+Implemented the change of light / dark themes, translation russian / english languages, upload images. Using 
+localStorage for saving current theme and language.
+* A [music player](https://rolling-scopes-school.github.io/karinazhuro-JSFEPRESCHOOL/js30/audio-player/) that allows you
+to play / stop tracks, play in turn or flip through them by clicking on buttons.
+* An application that load API and displays information about 
+[movies](https://rolling-scopes-school.github.io/karinazhuro-JSFEPRESCHOOL/js30/movie-app/). Implement  search the 
+user's request.
 
 ## Languages:
 
